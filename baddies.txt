@@ -33,7 +33,7 @@ Shots:
 Moves:
 
 0a. Top to bottom, linear, then out
-0b. Left to right, linear, then out
+0b. Left to right, linear, then out (right to left, I think)
 
 1. Track to center, stop
 
@@ -76,7 +76,7 @@ Options:
 7/7	11	x
 8/2d	12	x
 9/6	13	x
-10/0a	14	
+10/0a	14	x
 10/0b	15	
 11/9	16	
 12/12	17	
