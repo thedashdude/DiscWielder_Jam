@@ -1,0 +1,8 @@
+Fire
+Ability
+Show Hitbox / Move Alt
+
+
+Launch
+Full Clear
+Move Alt

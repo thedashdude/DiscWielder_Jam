@@ -1,0 +1,85 @@
+Shots:
+
+1. Shoots streams down in (3s) bursts			x
+
+2. Shoots straight down at random intervals		x
+
+3. Homing shots						x
+
+4. Missle Rain sort of thing				x
+
+5. Scope in / three round burst				x
+
+6. Shotgun						x
+
+7. Zig-zag bullets					x
+
+8. Twin homing in opposite directions			x
+
+9. Random Ricochet Bullets				x
+
+10. Linear for a second, then X burst			x
+
+11. On/Off ring around enemy				x
+
+12. Shoot towards player, then return to shooter	x
+
+13. Spiral out from center				
+
+14. Random shot, which then stops			x
+
+15. Semi-Continuous X beam				x
+
+Moves:
+
+0a. Top to bottom, linear, then out
+0b. Left to right, linear, then out
+
+1. Track to center, stop
+
+2a. Bounce side to side across top
+2b. Bounce up and down across left
+2c. Bounce up and down across right
+
+3. Track to a random point, pause, then repeat
+
+4. Circle the arena
+
+5. Come from below, continue off the top (slow)
+
+6. Zig zag the whole arena, slowly top to bottom
+
+7. Track to a random point, stay there
+
+8. Walk towards player
+
+9. Turn towards player
+
+10. Mark a place to teleport, then teleport
+
+11. Slide to random point along the top, stop. Repeat
+
+
+Options:
+1/11	01	x
+2/2a	02	x
+3/1	03	x
+3/3	04	x
+4/2b	05	x
+4/2c	06	-
+5/1	07	x
+5/7	08	x
+6/6	09	x
+6/4	10	
+7/7	11	
+8/2a	12	
+9/6	13	
+10/0a	14	
+10/0b	15	
+11/9	16	
+12/7	17	
+13/1	18	
+14/0a	19	
+14/5	20	
+15/10	21	
+

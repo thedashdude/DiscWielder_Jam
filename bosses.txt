@@ -1,0 +1,20 @@
+bosses (3?)
+
+Gimmicks:
+1.Time Survival
+2.Healthbar
+3.Deflect Saws Back
+
+Attacks:
+a. Vertical bars
+b. Horizontal bars
+c. Central Explosion shots
+d. Compress to center shots
+e. Directed super fast saw blades
+f. Lots of missile shots
+g. Scattershot
+h. laser bouncing back and forth, alternating if enabled
+
+1:cdfh
+2:abdg
+3:e
