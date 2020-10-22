@@ -21,7 +21,7 @@
             <kind>1</kind>
             <string>/// 1 Enemy00
 make_enemy_00(1,false);
-make_enemy_11(7);
+make_enemy_12(3);
 </string>
           </argument>
         </arguments>
