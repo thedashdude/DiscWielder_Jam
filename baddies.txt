@@ -59,25 +59,27 @@ Moves:
 
 11. Slide to random point along the top, stop. Repeat
 
+12. Track to random point in bottom half.
+
 
 Options:
-1/11	01	x
+1/2a	01	x
 2/2a	02	x
 3/1	03	x
 3/3	04	x
 4/2b	05	x
 4/2c	06	-
 5/1	07	x
-5/7	08	x
+5/3	08	x
 6/6	09	x
-6/4	10	
+6/4	10	x
 7/7	11	
-8/2a	12	
+8/2d	12	
 9/6	13	
 10/0a	14	
 10/0b	15	
 11/9	16	
-12/7	17	
+12/12	17	
 13/1	18	
 14/0a	19	
 14/5	20	
