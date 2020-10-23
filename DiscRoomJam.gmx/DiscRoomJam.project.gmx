@@ -48,6 +48,8 @@
       <sprite>sprites\spr_bullet_10</sprite>
       <sprite>sprites\spr_bullet_10alt</sprite>
       <sprite>sprites\spr_bullet_11</sprite>
+      <sprite>sprites\spr_bullet_12</sprite>
+      <sprite>sprites\spr_bullet_13</sprite>
     </sprites>
     <sprite>sprites\font_spr</sprite>
     <sprites name="Splatters">
@@ -87,6 +89,8 @@
       <script>scripts\bullet_script_10.gml</script>
       <script>scripts\bullet_script_10cross.gml</script>
       <script>scripts\bullet_script_11.gml</script>
+      <script>scripts\bullet_script_12.gml</script>
+      <script>scripts\bullet_script_13.gml</script>
     </scripts>
     <scripts name="Enemy Spawns">
       <script>scripts\make_enemy_00.gml</script>
@@ -105,6 +109,8 @@
       <script>scripts\make_enemy_14.gml</script>
       <script>scripts\make_enemy_15.gml</script>
       <script>scripts\make_enemy_16.gml</script>
+      <script>scripts\make_enemy_17.gml</script>
+      <script>scripts\make_enemy_18.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -135,6 +141,8 @@
       <object>objects\enemy_obj_14</object>
       <object>objects\enemy_obj_15</object>
       <object>objects\enemy_obj_16</object>
+      <object>objects\enemy_obj_17</object>
+      <object>objects\enemy_obj_18</object>
     </objects>
     <objects name="Bullet Objects">
       <object>objects\bullet_obj_0</object>
@@ -149,6 +157,8 @@
       <object>objects\bullet_obj_10</object>
       <object>objects\bullet_obj_10cross</object>
       <object>objects\bullet_obj_11</object>
+      <object>objects\bullet_obj_12</object>
+      <object>objects\bullet_obj_13</object>
       <object>objects\bullet_spawner_04</object>
       <object>objects\bullet_spawner_05</object>
     </objects>
