@@ -22,7 +22,9 @@
             <string>/// 1 Enemy00
 make_enemy_00(1,false);
 
-make_enemy_19(4);
+make_enemy_19(1);
+
+make_enemy_21(3);
 </string>
           </argument>
         </arguments>

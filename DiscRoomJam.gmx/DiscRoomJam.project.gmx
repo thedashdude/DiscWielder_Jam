@@ -94,6 +94,7 @@
       <script>scripts\bullet_script_12.gml</script>
       <script>scripts\bullet_script_13.gml</script>
       <script>scripts\bullet_script_14.gml</script>
+      <script>scripts\bullet_script_15.gml</script>
     </scripts>
     <scripts name="Enemy Spawns">
       <script>scripts\make_enemy_00.gml</script>
@@ -115,6 +116,8 @@
       <script>scripts\make_enemy_17.gml</script>
       <script>scripts\make_enemy_18.gml</script>
       <script>scripts\make_enemy_19.gml</script>
+      <script>scripts\make_enemy_20.gml</script>
+      <script>scripts\make_enemy_21.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -148,6 +151,8 @@
       <object>objects\enemy_obj_17</object>
       <object>objects\enemy_obj_18</object>
       <object>objects\enemy_obj_19</object>
+      <object>objects\enemy_obj_20</object>
+      <object>objects\enemy_obj_21</object>
     </objects>
     <objects name="Bullet Objects">
       <object>objects\bullet_obj_0</object>
