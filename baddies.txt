@@ -61,27 +61,32 @@ Moves:
 
 12. Track to random point in bottom half.
 
+TOP	6 + 1
+BOTTOM	4 + 2
+SIDEs	3 + 2
 
 Options:
-1/2a	01	x
-2/2a	02	x
-3/1	03	x
-3/3	04	x
-4/2b	05	x
-4/2c	06	-
-5/1	07	x
-5/3	08	x
-6/6	09	x
-6/4	10	x
-7/7	11	x
-8/2d	12	x
-9/6	13	x
-10/0a	14	x
-10/0b	15	x
-11/9	16	
-12/12	17	
-13/1	18	
-14/0a	19	
-14/5	20	
-15/10	21	
+#/#	00	x	TOP
+#/##	00a	x	TOP
+1/2a	01	x	TOP/Side
+2/2a	02	x	TOP
+3/1	03	x	ALL
+3/3	04	x	DOWN
+4/2b	05	x	SIDE
+4/2c	06	-	
+5/1	07	x	ALL
+5/3	08	x	DOWN
+6/6	09	x	TOP/Side
+6/4	10	x	ALL
+7/7	11	x	RIGHT
+8/2d	12	x	DOWN
+9/6	13	x	TOP/Side
+10/0a	14	x	DOWN
+10/0b	15	x	RIGHT
+11/9	16	x	TOP
+12/12	17		DOWN
+13/1	18		LEFT
+14/0a	19		TOP
+14/5	20		DOWN
+15/10	21		SIDES
 
