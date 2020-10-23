@@ -20,7 +20,7 @@ Shots:
 
 10. Linear for a second, then X burst			x
 
-11. On/Off ring around enemy				x
+11. Full Circular Blast					x
 
 12. Shoot towards player, then return to shooter	x
 
@@ -51,9 +51,9 @@ Moves:
 
 7. Track to a random point, stay there
 
-8. Walk towards player
+8. Turn towards player
 
-9. Turn towards player
+9. 8-way bouncer.
 
 10. Mark a place to teleport, then teleport
 
@@ -77,7 +77,7 @@ Options:
 8/2d	12	x
 9/6	13	x
 10/0a	14	x
-10/0b	15	
+10/0b	15	x
 11/9	16	
 12/12	17	
 13/1	18	

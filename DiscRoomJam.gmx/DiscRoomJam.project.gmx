@@ -131,6 +131,7 @@
       <object>objects\enemy_obj_13</object>
       <object>objects\enemy_obj_14</object>
       <object>objects\enemy_obj_15</object>
+      <object>objects\enemy_obj_16</object>
     </objects>
     <objects name="Bullet Objects">
       <object>objects\bullet_obj_0</object>
