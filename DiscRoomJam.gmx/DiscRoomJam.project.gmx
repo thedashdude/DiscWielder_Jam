@@ -101,6 +101,7 @@
       <script>scripts\make_enemy_12.gml</script>
       <script>scripts\make_enemy_13.gml</script>
       <script>scripts\make_enemy_14.gml</script>
+      <script>scripts\make_enemy_15.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -129,6 +130,7 @@
       <object>objects\enemy_obj_12</object>
       <object>objects\enemy_obj_13</object>
       <object>objects\enemy_obj_14</object>
+      <object>objects\enemy_obj_15</object>
     </objects>
     <objects name="Bullet Objects">
       <object>objects\bullet_obj_0</object>
