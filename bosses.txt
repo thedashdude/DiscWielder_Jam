@@ -18,3 +18,47 @@ h. laser bouncing back and forth, alternating if enabled
 1:cdfh
 2:abdg
 3:e
+
+DEVIL BOSS: <By health>
+Phase 1:
+A)	Explosion from self
+B)	Compress to self
+C)	Lots of artillery
+D)	Chain Homing Missiles
+Phase 2: Create circling totems
+A)	Explode + Compress
+B)	Scattershot
+C)	Totems scope in
+D)	artillery
+
+
+TENTACLE BOSS <By health>:
+Phase 1:
+A)	Vertical Bars
+B)	Horizontal Bars
+C)	Scattershot
+D)	Spiral out from center chain
+Phase 2: Create Vertical Continuous beam
+A)	Vert + Hor Bars
+B)	Ricochet Scattershot
+C)	Create Random X beam
+D)	Spiral out from center chain
+
+
+HUMAN BOSS: <By Reflect>
+Phase 1:
+A)	Slow Saw
+Phase 2:
+A)	Fast Saw
+	No warning:
+a)	Compress
+b)	Explode
+c)	Vertical Bars
+d)	Horizontal Bars
+e)	Artillery
+f)	Arty X Beam
+
+
+
+
+

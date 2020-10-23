@@ -64,6 +64,20 @@
     <sprites name="Forecasts">
       <sprite>sprites\spr_forecast_bullet_04</sprite>
     </sprites>
+    <sprites name="Boss 1 Sprites">
+      <sprite>sprites\spr_boss_1</sprite>
+      <sprite>sprites\spr_boss_1_t1</sprite>
+      <sprite>sprites\spr_boss_1_t2</sprite>
+      <sprite>sprites\spr_boss_1_t3</sprite>
+      <sprite>sprites\spr_boss_1_t4</sprite>
+      <sprite>sprites\spr_boss_1_trans</sprite>
+      <sprite>sprites\spr_boss_1_p2</sprite>
+      <sprite>sprites\spr_boss_1_t5</sprite>
+      <sprite>sprites\spr_boss_1_t6</sprite>
+      <sprite>sprites\spr_boss_1_t7</sprite>
+      <sprite>sprites\spr_boss_1_totem</sprite>
+      <sprite>sprites\spr_boss_1_bullet</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\level_background0</background>
@@ -180,6 +194,10 @@
       <object>objects\runtime_overlord_parent</object>
       <object>objects\runtime_overlord_00</object>
     </objects>
+    <objects name="Boss 1">
+      <object>objects\boss_1_parent</object>
+      <object>objects\boss_1_control</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">
@@ -189,6 +207,9 @@
       <timeline>timelines\stage_0_part_03</timeline>
       <timeline>timelines\stage_0_part_04</timeline>
       <timeline>timelines\stage_0_part_05</timeline>
+    </timelines>
+    <timelines name="Boss1">
+      <timeline>timelines\boss_1_begin</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">
