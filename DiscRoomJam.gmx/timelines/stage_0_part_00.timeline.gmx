@@ -25,6 +25,8 @@ make_enemy_00(1,false);
 make_enemy_19(1);
 
 make_enemy_21(3);
+
+boss_attack_vertical();
 </string>
           </argument>
         </arguments>
@@ -105,6 +107,7 @@ make_enemy_00(1,true)
           <argument>
             <kind>1</kind>
             <string>///End this phase
+boss_attack_horizontal();
 in_phase = false;
 </string>
           </argument>

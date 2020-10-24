@@ -34,12 +34,12 @@ D)	artillery
 
 TENTACLE BOSS <By health>:
 Phase 1:
-A)	Vertical Bars
-B)	Horizontal Bars
-C)	Scattershot
+A)x	Vertical Bars
+B)x	Horizontal Bars
+C)x	Scattershot
 D)	Spiral out from center chain
 Phase 2: Create Vertical Continuous beam
-A)	Vert + Hor Bars
+A)x	Vert + Hor Bars
 B)	Ricochet Scattershot
 C)	Create Random X beam
 D)	Spiral out from center chain

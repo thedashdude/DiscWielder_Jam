@@ -79,6 +79,23 @@
       <sprite>sprites\spr_boss_1_bullet</sprite>
       <sprite>sprites\spr_bullet_scattershot</sprite>
     </sprites>
+    <sprites name="Boss 2 Sprites">
+      <sprite>sprites\spr_boss_2</sprite>
+      <sprite>sprites\spr_boss_2_t1</sprite>
+      <sprite>sprites\spr_boss_2_t2</sprite>
+      <sprite>sprites\spr_boss_2_t3</sprite>
+      <sprite>sprites\spr_boss_2_t4</sprite>
+      <sprite>sprites\spr_boss_2_p2</sprite>
+      <sprite>sprites\spr_boss_2_trans</sprite>
+      <sprite>sprites\spr_boss_2_t5</sprite>
+      <sprite>sprites\spr_boss_2_t6</sprite>
+      <sprite>sprites\spr_boss_2_t7</sprite>
+      <sprite>sprites\spr_boss_2_t8</sprite>
+      <sprite>sprites\spr_boss_2_drone</sprite>
+      <sprite>sprites\spr_bullet_fullbeam</sprite>
+      <sprite>sprites\spr_bullet_verbar</sprite>
+      <sprite>sprites\spr_bullet_horbar</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\level_background0</background>
@@ -140,6 +157,8 @@
       <script>scripts\boss_attack_artillery.gml</script>
       <script>scripts\boss_attack_chain_missile.gml</script>
       <script>scripts\boss_attack_scattershot.gml</script>
+      <script>scripts\boss_attack_vertical.gml</script>
+      <script>scripts\boss_attack_horizontal.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -213,6 +232,12 @@
       <object>objects\boss_bullet_spawner_chain_missile</object>
       <object>objects\boss_bullet_spawner_scattershot</object>
       <object>objects\boss_1_obj_totem</object>
+    </objects>
+    <objects name="Boss 2">
+      <object>objects\boss_2_obj_drone</object>
+      <object>objects\boss_bullet_fullbeam</object>
+      <object>objects\boss_bullet_verbar</object>
+      <object>objects\boss_bullet_horbar</object>
     </objects>
   </objects>
   <timelines name="timelines">
