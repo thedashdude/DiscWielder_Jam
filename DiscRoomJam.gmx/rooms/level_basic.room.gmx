@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1000</w>
+    <w>984</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>-143</xoffset>
-    <yoffset>-47</yoffset>
+    <page>0</page>
+    <xoffset>-175</xoffset>
+    <yoffset>-140</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="testing_bg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,9 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="player_obj" x="144" y="144" name="inst_A56E11D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="player_obj" x="192" y="192" name="inst_A56E11D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="level_control_obj" x="0" y="0" name="inst_1912E7BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="runtime_overlord_00" x="24" y="0" name="inst_5625F671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="boss_1_control" x="-24" y="-24" name="inst_5DC8EDAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background6" x="288" y="0" w="96" h="288" xo="0" yo="0" id="10000001" name="inst_8758B55B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

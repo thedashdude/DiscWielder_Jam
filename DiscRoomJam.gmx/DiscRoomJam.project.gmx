@@ -77,6 +77,7 @@
       <sprite>sprites\spr_boss_1_t7</sprite>
       <sprite>sprites\spr_boss_1_totem</sprite>
       <sprite>sprites\spr_boss_1_bullet</sprite>
+      <sprite>sprites\spr_bullet_scattershot</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -132,6 +133,13 @@
       <script>scripts\make_enemy_19.gml</script>
       <script>scripts\make_enemy_20.gml</script>
       <script>scripts\make_enemy_21.gml</script>
+    </scripts>
+    <scripts name="Boss Attacks">
+      <script>scripts\boss_attack_explode.gml</script>
+      <script>scripts\boss_attack_compress.gml</script>
+      <script>scripts\boss_attack_artillery.gml</script>
+      <script>scripts\boss_attack_chain_missile.gml</script>
+      <script>scripts\boss_attack_scattershot.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -197,6 +205,14 @@
     <objects name="Boss 1">
       <object>objects\boss_1_parent</object>
       <object>objects\boss_1_control</object>
+      <object>objects\boss_1_obj_p1</object>
+      <object>objects\boss_1_obj_p2</object>
+      <object>objects\boss_bullet_explode</object>
+      <object>objects\boss_bullet_compress</object>
+      <object>objects\boss_bullet_scattershot</object>
+      <object>objects\boss_bullet_spawner_chain_missile</object>
+      <object>objects\boss_bullet_spawner_scattershot</object>
+      <object>objects\boss_1_obj_totem</object>
     </objects>
   </objects>
   <timelines name="timelines">

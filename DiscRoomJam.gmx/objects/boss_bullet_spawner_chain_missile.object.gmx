@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>boss_1_parent</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,23 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hits = 10;
-transition = 5;
+            <string>fire_period = 20;
+fire_count = 5;
+i = 0;
 
-hits = hits * 4;
-transition = transition * 4;
+direction = point_direction(x,y,player_obj.x+player_obj.sprsize_x/2,player_obj.y+player_obj.sprsize_y/2);
 
-can_trans = true;
-
-instance_create(level_control_obj.room_center_x,level_control_obj.room_upmost - 96,boss_1_obj_p1);
-
-
+event_perform(ev_alarm,0);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,18 +54,15 @@ instance_create(level_control_obj.room_center_x,level_control_obj.room_upmost - 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hits&lt;=0)
+            <string>i = i + 1;
+
+alarm_set(0,fire_period);
+
+bullet_script_03(direction);
+
+if(i &gt;= fire_count)
 {
-    with(boss_1_parent)
-    {
-        instance_destroy();
-    }
-}
-if(hits&lt;=transition &amp;&amp; can_trans)
-{
-    can_trans= false;
-    instance_create(boss_1_obj_p1.x,boss_1_obj_p1.y,boss_1_obj_p2);
-    instance_destroy(boss_1_obj_p1);
+    instance_destroy();
 }
 </string>
           </argument>
