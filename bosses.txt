@@ -37,12 +37,12 @@ Phase 1:
 A)x	Vertical Bars
 B)x	Horizontal Bars
 C)x	Scattershot
-D)	Spiral out from center chain
+D)x	Spiral out from center chain
 Phase 2: Create Vertical Continuous beam
 A)x	Vert + Hor Bars
-B)	Ricochet Scattershot
-C)	Create Random X beam
-D)	Spiral out from center chain
+B)x	Ricochet Scattershot
+C)x	Random X beam
+D)x	Spiral out from center chain
 
 
 HUMAN BOSS: <By Reflect>

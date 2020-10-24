@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hits = 10;
-transition = 5;
+            <string>hits = 14;
+transition = 7;
 
-hits = hits * 4;
-transition = transition * 4;
+//hits = hits * 4;
+//transition = transition * 4;
 
 can_trans = true;
 

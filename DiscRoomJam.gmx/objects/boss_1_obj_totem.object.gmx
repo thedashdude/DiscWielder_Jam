@@ -43,7 +43,7 @@ center_y = boss_1_obj_p2.y;
 r = 0;
 theta = 0;
 goal_r = 52;
-dr = goal_r/(6*60);
+dr = goal_r/(3*60);
 dth = 0.5;
 
 shot_x = 0

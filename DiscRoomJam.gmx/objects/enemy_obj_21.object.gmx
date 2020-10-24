@@ -73,7 +73,7 @@ event_perform(ev_alarm,0);
 
 image_speed = 0.25;
 
-alarm_set(0,120);
+alarm_set(0,180);
 </string>
           </argument>
         </arguments>

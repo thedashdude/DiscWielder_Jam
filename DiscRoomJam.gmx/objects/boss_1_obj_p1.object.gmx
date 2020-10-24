@@ -78,7 +78,7 @@ next_attack = choose(1,2,3,4);
 if(next_attack == 1)
 {
     sprite_index = spr_boss_1_t1;
-    image_speed = 3/60;
+    image_speed = 4/60;
     alarm_set(0,120);
 }
 else if(next_attack == 2)
@@ -157,6 +157,9 @@ theta = theta / 2
 make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green);
 
 boss_1_control.hits = boss_1_control.hits - 1;
+
+
+instance_destroy(kill_enemy_obj);
 </string>
           </argument>
         </arguments>

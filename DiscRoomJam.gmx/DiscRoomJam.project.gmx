@@ -95,6 +95,7 @@
       <sprite>sprites\spr_bullet_fullbeam</sprite>
       <sprite>sprites\spr_bullet_verbar</sprite>
       <sprite>sprites\spr_bullet_horbar</sprite>
+      <sprite>sprites\spr_bullet_spiral</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -159,6 +160,9 @@
       <script>scripts\boss_attack_scattershot.gml</script>
       <script>scripts\boss_attack_vertical.gml</script>
       <script>scripts\boss_attack_horizontal.gml</script>
+      <script>scripts\boss_attack_ricochet_burst.gml</script>
+      <script>scripts\boss_attack_chain_spiral.gml</script>
+      <script>scripts\boss_attack_random_x.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -234,10 +238,16 @@
       <object>objects\boss_1_obj_totem</object>
     </objects>
     <objects name="Boss 2">
+      <object>objects\boss_2_parent</object>
+      <object>objects\boss_2_control</object>
+      <object>objects\boss_2_obj_p1</object>
+      <object>objects\boss_2_obj_p2</object>
       <object>objects\boss_2_obj_drone</object>
       <object>objects\boss_bullet_fullbeam</object>
       <object>objects\boss_bullet_verbar</object>
       <object>objects\boss_bullet_horbar</object>
+      <object>objects\boss_bullet_spawner_random_x</object>
+      <object>objects\boss_bullet_spiral</object>
     </objects>
   </objects>
   <timelines name="timelines">

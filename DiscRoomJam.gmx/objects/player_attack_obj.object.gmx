@@ -32,6 +32,8 @@ increment = 4
 counter = 0
 
 frame = 0
+
+instance_create(x,y,kill_enemy_obj);
 </string>
           </argument>
         </arguments>
@@ -62,10 +64,6 @@ counter = counter + 1
 if(counter == increment)
 {
     frame = 1
-}
-if(counter &lt;= increment)
-{
-    instance_create(x,y,kill_enemy_obj)
 }
 
 image_index = frame

@@ -24,7 +24,7 @@ Shots:
 
 12. Shoot towards player, then return to shooter	x
 
-13. Spiral out from center				
+13. Spiral out from center				x
 
 14. Random shot, which then stops			x
 

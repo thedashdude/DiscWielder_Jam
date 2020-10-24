@@ -1,5 +1,5 @@
 ///boss_attack_explode();
-var number = 20;
+var number = 16;
 
 for(var i = 0; i < number; i = i + 1)
 {
