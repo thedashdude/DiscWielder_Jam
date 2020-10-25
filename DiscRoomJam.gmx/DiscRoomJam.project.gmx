@@ -117,6 +117,7 @@
     <background>background\level_background5</background>
     <background>background\background6</background>
     <background>background\testing_bg</background>
+    <background>background\menu_background</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -177,6 +178,44 @@
     <script>scripts\ability_saw.gml</script>
     <script>scripts\ability_flash.gml</script>
     <script>scripts\wipe_gameplay.gml</script>
+    <scripts name="Menu_scripts">
+      <script>scripts\menu_main.gml</script>
+      <scripts name="Menu Main">
+        <script>scripts\menu_card_select.gml</script>
+        <scripts name="Menu Card Select">
+          <script>scripts\menu_start_game_disc.gml</script>
+          <script>scripts\menu_start_game_flash.gml</script>
+          <script>scripts\enqueue_full_game.gml</script>
+        </scripts>
+        <script>scripts\menu_practice_select.gml</script>
+        <scripts name="Menu Practice Select">
+          <script>scripts\menu_practice_disc.gml</script>
+          <script>scripts\menu_practice_flash.gml</script>
+          <script>scripts\menu_practice_stages.gml</script>
+          <scripts name="Practice Setups">
+            <script>scripts\practice_stage_1.gml</script>
+            <script>scripts\practice_boss_1.gml</script>
+            <script>scripts\practice_stage_2.gml</script>
+            <script>scripts\practice_boss_2.gml</script>
+            <script>scripts\practice_stage_3.gml</script>
+            <script>scripts\practice_boss_3.gml</script>
+          </scripts>
+        </scripts>
+        <script>scripts\menu_options.gml</script>
+        <scripts name="Menu Options">
+          <script>scripts\menu_options_fullscreen.gml</script>
+          <script>scripts\menu_options_controls.gml</script>
+          <scripts name="Options Controls">
+            <script>scripts\start_keybinding_script.gml</script>
+          </scripts>
+        </scripts>
+        <script>scripts\menu_exit.gml</script>
+      </scripts>
+    </scripts>
+    <script>scripts\keyval_to_string.gml</script>
+    <script>scripts\index_controls.gml</script>
+    <script>scripts\key_rebind.gml</script>
+    <script>scripts\save_options.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>
@@ -279,6 +318,8 @@
     <object>objects\exit_game_control</object>
     <object>objects\pause_game_control</object>
     <object>objects\keybinds_control</object>
+    <object>objects\menu_control</object>
+    <object>objects\global_control</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">
@@ -296,9 +337,9 @@
     <timeline>timelines\boss_3_tl_1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\level_basic</room>
     <room>rooms\game_start</room>
     <room>rooms\main_menu</room>
+    <room>rooms\level_basic</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

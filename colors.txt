@@ -14,3 +14,15 @@ Red:		227,15,28
 D.Red:		114,15,28
 Green:		47,255,69
 D.Green:	24,138,35
+
+
+
+comma 	188
+dash 	189
+period 	190
+forward slash 	191
+grave accent 	192
+open bracket 	219
+back slash 	220
+close braket 	221
+single quote 	222 

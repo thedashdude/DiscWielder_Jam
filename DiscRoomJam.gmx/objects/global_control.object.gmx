@@ -25,18 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open("options.ini");
+            <string>global.font = font_add_sprite(font_spr,32,false,0);
+global.purple = make_color_rgb(62,26,107);
+global.grey = make_color_rgb(81,81,104);
+global.skin = make_color_rgb(211,181,170);
+instance_create(0,0,keybinds_control);
 
-control_up = ini_read_real("keys", "up", vk_up);
-control_down = ini_read_real("keys", "down", vk_down);
-control_left = ini_read_real("keys", "left", vk_left);
-control_right = ini_read_real("keys", "right", vk_right);
-control_fire1 = ini_read_real("keys", "fire1", ord('Z'));
-control_fire2 = ini_read_real("keys", "fire2", ord('X'));
-control_fire3 = ini_read_real("keys", "fire3", ord('C'));
-control_menu = ini_read_real("keys", "menu", vk_tab);
-
+ini_open("options.ini");
+if(ini_read_real("settings","fullscreen",0) == 1)
+{
+    window_set_fullscreen(true);
+}
 ini_close();
+
+
+room_goto(room_next(room));
 </string>
           </argument>
         </arguments>
