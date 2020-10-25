@@ -31,17 +31,22 @@ draw_set_font(font);
 speed_factor = 1
 
 points = 0
-level_name = "Test:Alpha"
+level_name = "TEST: ALPHA"
 
 
-control_up = vk_up
-control_down = vk_down
-control_left = vk_left
-control_right = vk_right
-control_fire1 = ord('Z')
-control_fire2 = ord('X')
-control_fire3 = ord('C')
-control_menu = vk_tab
+control_up = vk_up;
+control_down = vk_down;
+control_left = vk_left;
+control_right = vk_right;
+//control_up = ord('W');
+//control_down = ord('S');
+//control_left = ord('A');
+//control_right = ord('D');
+
+control_fire1 = ord('Z');
+control_fire2 = ord('X');
+control_fire3 = ord('C');
+control_menu = vk_tab;
 
 
 room_leftmost = 0

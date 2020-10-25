@@ -97,6 +97,11 @@
       <sprite>sprites\spr_bullet_horbar</sprite>
       <sprite>sprites\spr_bullet_spiral</sprite>
     </sprites>
+    <sprites name="Boss 3 Sprites">
+      <sprite>sprites\spr_boss_3</sprite>
+      <sprite>sprites\spr_spin_blade</sprite>
+      <sprite>sprites\spr_spin_blade_evil</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\level_background0</background>
@@ -249,6 +254,16 @@
       <object>objects\boss_bullet_spawner_random_x</object>
       <object>objects\boss_bullet_spiral</object>
     </objects>
+    <objects name="Boss 3">
+      <object>objects\runtime_overlord_boss3</object>
+      <object>objects\boss_3_parent</object>
+      <object>objects\boss_3_control</object>
+      <object>objects\boss_3_obj_demo_saw</object>
+      <object>objects\boss_3_obj_sawblade</object>
+      <object>objects\boss_3_obj_p1</object>
+      <object>objects\boss_3_location_parent</object>
+      <object>objects\boss_3_obj_p2</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">
@@ -262,6 +277,8 @@
     <timelines name="Boss1">
       <timeline>timelines\boss_1_begin</timeline>
     </timelines>
+    <timeline>timelines\boss_3_tl_0</timeline>
+    <timeline>timelines\boss_3_tl_1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\level_basic</room>
