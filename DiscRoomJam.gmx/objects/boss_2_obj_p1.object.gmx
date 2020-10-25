@@ -159,7 +159,7 @@ make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green)
 boss_2_control.hits = boss_2_control.hits - 1;
 
 
-instance_destroy(kill_enemy_obj);
+instance_destroy(other);
 </string>
           </argument>
         </arguments>
