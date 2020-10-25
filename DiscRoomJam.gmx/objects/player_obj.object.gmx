@@ -49,10 +49,6 @@ ability_index = 0
 ability_count = 0
 
 boost_spd = 2
-
-
-ability_count = 5;
-ability = ability_flash;
 </string>
           </argument>
         </arguments>
@@ -124,10 +120,10 @@ ability = ability_flash;
         instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj)
     }
     
-    if(fire2 &amp;&amp; ability_count &gt; 0)
+    if(fire2 &amp;&amp; level_control_obj.player_ability_count &gt; 0)
     {
-        ability_count = ability_count - 1;
-        script_execute(ability);
+        level_control_obj.player_ability_count = level_control_obj.player_ability_count - 1;
+        script_execute(level_control_obj.player_ability);
     }
 
 }
@@ -163,7 +159,8 @@ ability = ability_flash;
         theta = theta mod 360
     }
     
-    make_splatter(x + sprsize_x/2,y + sprsize_y/2,8,theta, other.splat_kill_spread, other.splat_kill_force, 20, 0)
+    make_splatter(x + sprsize_x/2,y + sprsize_y/2,8,theta, other.splat_kill_spread, other.splat_kill_force, 20, 0);
+    instance_create(0,0,death_control);
 }
 </string>
           </argument>
@@ -199,7 +196,6 @@ ability = ability_flash;
         draw_sprite(spr_hitbox_overlay,0,x,y)
     }
 }
-
 if(dead)
     draw_sprite(spr_player,3,x,y)
 </string>

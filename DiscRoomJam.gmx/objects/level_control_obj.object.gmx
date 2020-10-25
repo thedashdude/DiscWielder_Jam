@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>font = font_add_sprite(font_spr,32,false,0);
 draw_set_font(font);
-
+text_color = make_color_rgb(211,181,170);
 speed_factor = 1;
 
 points = 0;
@@ -61,10 +61,9 @@ room_center_y = room_upmost/2 + room_downmost/2;
 
 player_ability = ability_saw;
 player_ability_count = 5;
+player_lives = 3;
 
 instance_create(room_center_x-9,room_center_y,player_obj);
-player_obj.ability = player_ability;
-player_obj.ability_count = player_ability_count;
 
 
 
@@ -141,15 +140,33 @@ instance_create(0,0,stage);
 
 //draw_set_color(make_colour_rgb(61, 174, 255))
 
-draw_set_color(c_black)
+draw_set_color(text_color)
 draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
 draw_text(288+48,48,level_name)
 
-draw_set_halign(fa_left)
-draw_text(288+1,96,"Pts:")
 
-draw_set_halign(fa_right)
-draw_text(288+96,96,string(points))
+draw_set_halign(fa_left)
+draw_text(288+1,170,"Lives:")
+
+for(var i = 0; i &lt; player_lives; i = i + 1)
+{
+    draw_sprite(spr_heart,0,288+1+ 13 + 13*i,170 + 13);
+}
+
+draw_text(288+1,200,"Cards:")
+for(var i = 0; i &lt; player_ability_count; i = i + 1)
+{
+    draw_sprite(spr_diamond,0,288+1+ 13 + 13*i,200 + 13);
+}
+
+
+
+//draw_set_halign(fa_left)
+//draw_text(288+1,96,"Pts:")
+
+//draw_set_halign(fa_right)
+//draw_text(288+96,96,string(points))
 </string>
           </argument>
         </arguments>

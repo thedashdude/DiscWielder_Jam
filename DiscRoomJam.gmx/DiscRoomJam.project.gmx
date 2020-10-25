@@ -102,6 +102,11 @@
       <sprite>sprites\spr_boss_3</sprite>
       <sprite>sprites\spr_spin_blade_evil</sprite>
     </sprites>
+    <sprite>sprites\spr_gradient</sprite>
+    <sprites name="Icons">
+      <sprite>sprites\spr_heart</sprite>
+      <sprite>sprites\spr_diamond</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\level_background0</background>
@@ -171,6 +176,7 @@
     </scripts>
     <script>scripts\ability_saw.gml</script>
     <script>scripts\ability_flash.gml</script>
+    <script>scripts\wipe_gameplay.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>
@@ -269,6 +275,7 @@
       <object>objects\boss_3_location_parent</object>
       <object>objects\boss_3_obj_p2</object>
     </objects>
+    <object>objects\death_control</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">
