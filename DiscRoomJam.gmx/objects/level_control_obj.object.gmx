@@ -57,6 +57,9 @@ room_center_x = room_leftmost/2 + room_rightmost/2
 room_center_y = room_upmost/2 + room_downmost/2
 
 
+
+
+player_ability = ability_saw;
 </string>
           </argument>
         </arguments>

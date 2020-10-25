@@ -50,6 +50,9 @@ ability_count = 0
 
 boost_spd = 2
 
+
+ability_count = 5;
+ability = ability_flash;
 </string>
           </argument>
         </arguments>
@@ -73,10 +76,11 @@ boost_spd = 2
           <argument>
             <kind>1</kind>
             <string>if(active){
-    input_x = 0
-    input_y = 0
-    fire1 = keyboard_check( level_control_obj.control_fire1)
-    fire3 = keyboard_check( level_control_obj.control_fire3)
+    input_x = 0;
+    input_y = 0;
+    fire1 = keyboard_check( level_control_obj.control_fire1);
+    fire2 = keyboard_check_pressed( level_control_obj.control_fire2);
+    fire3 = keyboard_check( level_control_obj.control_fire3);
     
     if(keyboard_check( level_control_obj.control_left) )
     {
@@ -119,7 +123,12 @@ boost_spd = 2
         attack_cooldown = 0
         instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj)
     }
-
+    
+    if(fire2 &amp;&amp; ability_count &gt; 0)
+    {
+        ability_count = ability_count - 1;
+        script_execute(ability);
+    }
 
 }
 </string>

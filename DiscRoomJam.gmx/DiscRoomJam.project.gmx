@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_spin_blade</sprite>
     <sprite>sprites\spr_sidebar</sprite>
     <sprite>sprites\spr_whack</sprite>
     <sprite>sprites\mask_whack</sprite>
@@ -99,7 +100,6 @@
     </sprites>
     <sprites name="Boss 3 Sprites">
       <sprite>sprites\spr_boss_3</sprite>
-      <sprite>sprites\spr_spin_blade</sprite>
       <sprite>sprites\spr_spin_blade_evil</sprite>
     </sprites>
   </sprites>
@@ -169,6 +169,8 @@
       <script>scripts\boss_attack_chain_spiral.gml</script>
       <script>scripts\boss_attack_random_x.gml</script>
     </scripts>
+    <script>scripts\ability_saw.gml</script>
+    <script>scripts\ability_flash.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>
@@ -178,6 +180,8 @@
     <object>objects\level_control_obj</object>
     <object>objects\deadly_parent</object>
     <object>objects\player_attack_obj</object>
+    <object>objects\player_ability_obj_saw</object>
+    <object>objects\player_ability_obj_flash</object>
     <object>objects\kill_enemy_obj</object>
     <objects name="Enemy Objects">
       <object>objects\enemy_parent</object>

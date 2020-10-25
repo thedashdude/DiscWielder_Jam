@@ -79,6 +79,7 @@ boss_attack_chain_spiral();
           <argument>
             <kind>1</kind>
             <string>make_splatter(x,y,8,0, 360, 1.5, 10, 1);
+instance_destroy(boss_bullet_fullbeam);
 </string>
           </argument>
         </arguments>
