@@ -8,18 +8,7 @@ for(var i = 1; i <= string_length(alphanumericsymbolic); i = i + 1)
         return string_char_at(alphanumericsymbolic,i);
     }
 }
-//show_message(chr(keycode));
-switch(chr(keycode))
-{
-    case '[': return "[";
-    case '~': return "~";
-    case '-': return "-";
-    case '=': return "=";
-    case '\': return "\";
-    case ';': return ";";
-    case ',': return ".";
-    case '/': return "/";
-}
+
 
 
 switch(keycode)
@@ -40,6 +29,19 @@ switch(keycode)
     case vk_lalt:  return "lalt";
     case vk_backspace:  return "bckspc";
     case vk_tab:  return "tab";
+}
+
+switch(keycode)
+{
+    case 188: return ",";
+    case 189: return "-";
+    case 190: return ".";
+    case 191: return "/";
+    case 192: return "`";
+    case 219: return "[";
+    case 220: return "\";
+    case 221: return "]";
+    case 222: return "'";
 }
 
 return "ERROR";
