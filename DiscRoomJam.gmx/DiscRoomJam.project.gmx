@@ -276,6 +276,9 @@
       <object>objects\boss_3_obj_p2</object>
     </objects>
     <object>objects\death_control</object>
+    <object>objects\exit_game_control</object>
+    <object>objects\pause_game_control</object>
+    <object>objects\keybinds_control</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">
@@ -294,6 +297,8 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\level_basic</room>
+    <room>rooms\game_start</room>
+    <room>rooms\main_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

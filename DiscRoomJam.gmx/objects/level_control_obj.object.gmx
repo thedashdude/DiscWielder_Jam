@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -34,19 +34,7 @@ points = 0;
 level_name = "TEST: ALPHA";
 
 
-control_up = vk_up;
-control_down = vk_down;
-control_left = vk_left;
-control_right = vk_right;
-//control_up = ord('W');
-//control_down = ord('S');
-//control_left = ord('A');
-//control_right = ord('D');
 
-control_fire1 = ord('Z');
-control_fire2 = ord('X');
-control_fire3 = ord('C');
-control_menu = vk_tab;
 
 
 room_leftmost = 0;
@@ -75,6 +63,9 @@ has_stage = true;
 stage = ds_queue_dequeue(stages);
 instance_create(0,0,stage);
 
+is_practice = false;
+game_text = "Victory!";
+
 //ds_queue_enqueue(stages,runtime_overlord_01);
 //ds_queue_enqueue(stages,runtime_overlord_boss_stage_2);
 //ds_queue_enqueue(stages,runtime_overlord_02);
@@ -101,7 +92,9 @@ instance_create(0,0,stage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(has_stage &amp;&amp; stage.over)
+            <string>
+
+if(has_stage &amp;&amp; stage.over)
 {
     instance_destroy(stage);
     if(!ds_queue_empty(stages))
@@ -112,7 +105,32 @@ instance_create(0,0,stage);
     else
     {
         has_stage = false;
+        var c = instance_create(0,0,exit_game_control);
+        c.end_text = game_text;
+        if(is_practice)
+        {
+            c.end_state = 2;
+        }
+        else if(player_lives &lt; 3)
+        {
+            c.end_state = 3;
+        }
+        else
+        {
+            c.end_state = 4;
+        }
     }
+}
+else if(player_lives &lt; 0)
+{
+    var c = instance_create(0,0,exit_game_control);
+    c.end_text = "You Died.";
+    c.end_state = 1;
+}
+
+if(keyboard_check_pressed( keybinds_control.control_menu))
+{
+    instance_create(0,0,pause_game_control);
 }
 </string>
           </argument>

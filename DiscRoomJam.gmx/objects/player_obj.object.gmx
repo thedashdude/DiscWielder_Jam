@@ -74,23 +74,23 @@ boost_spd = 2
             <string>if(active){
     input_x = 0;
     input_y = 0;
-    fire1 = keyboard_check( level_control_obj.control_fire1);
-    fire2 = keyboard_check_pressed( level_control_obj.control_fire2);
-    fire3 = keyboard_check( level_control_obj.control_fire3);
+    fire1 = keyboard_check( keybinds_control.control_fire1);
+    fire2 = keyboard_check_pressed( keybinds_control.control_fire2);
+    fire3 = keyboard_check( keybinds_control.control_fire3);
     
-    if(keyboard_check( level_control_obj.control_left) )
+    if(keyboard_check( keybinds_control.control_left) )
     {
         input_x = input_x - 1
     }
-    if(keyboard_check( level_control_obj.control_right) )
+    if(keyboard_check( keybinds_control.control_right) )
     {
         input_x = input_x + 1
     }
-    if(keyboard_check( level_control_obj.control_up) )
+    if(keyboard_check( keybinds_control.control_up) )
     {
         input_y = input_y - 1
     }
-    if(keyboard_check( level_control_obj.control_down) )
+    if(keyboard_check( keybinds_control.control_down) )
     {
         input_y = input_y + 1
     }
@@ -191,7 +191,7 @@ boost_spd = 2
         draw_sprite(spr_player,1,x,y)
     if(input_x &gt; 0 )
         draw_sprite(spr_player,2,x,y)
-    if(keyboard_check( level_control_obj.control_fire3))
+    if(keyboard_check( keybinds_control.control_fire3))
     {
         draw_sprite(spr_hitbox_overlay,0,x,y)
     }

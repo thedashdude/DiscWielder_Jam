@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.075;
+            <string>image_speed = 0.1;
 level_control_obj.player_lives = level_control_obj.player_lives-1;
+if(level_control_obj.player_lives &lt; 0)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -58,14 +62,9 @@ player_obj.active = true;
 level_control_obj.stage.timeline_position = 0;
 level_control_obj.stage.in_phase = true;
 
-if(level_control_obj.player_lives &lt; 0)
-{
-    room_restart();
-}
+
 
 instance_destroy();
-
-
 </string>
           </argument>
         </arguments>
