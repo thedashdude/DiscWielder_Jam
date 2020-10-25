@@ -73,6 +73,10 @@ sprite_down = 12
             <string>var theta = -360 / (2*pi) * arctan2(player_obj.y+player_obj.sprsize_y/2 - y,player_obj.x+player_obj.sprsize_x/2 - x) + 90
 theta = theta mod 360
 theta = theta / 2
+if(other.speed &gt; 0)
+{
+    theta = other.direction;
+}
 
 make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green)
 </string>

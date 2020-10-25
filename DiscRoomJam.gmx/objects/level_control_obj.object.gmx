@@ -28,10 +28,10 @@
             <string>font = font_add_sprite(font_spr,32,false,0);
 draw_set_font(font);
 
-speed_factor = 1
+speed_factor = 1;
 
-points = 0
-level_name = "TEST: ALPHA"
+points = 0;
+level_name = "TEST: ALPHA";
 
 
 control_up = vk_up;
@@ -49,17 +49,72 @@ control_fire3 = ord('C');
 control_menu = vk_tab;
 
 
-room_leftmost = 0
-room_rightmost = 288
-room_upmost = 0
-room_downmost = 288
-room_center_x = room_leftmost/2 + room_rightmost/2
-room_center_y = room_upmost/2 + room_downmost/2
+room_leftmost = 0;
+room_rightmost = 288;
+room_upmost = 0;
+room_downmost = 288;
+room_center_x = room_leftmost/2 + room_rightmost/2;
+room_center_y = room_upmost/2 + room_downmost/2;
 
 
 
 
 player_ability = ability_saw;
+player_ability_count = 5;
+
+instance_create(room_center_x-9,room_center_y,player_obj);
+player_obj.ability = player_ability;
+player_obj.ability_count = player_ability_count;
+
+
+
+stages = ds_queue_create();
+ds_queue_enqueue(stages,runtime_overlord_00);
+ds_queue_enqueue(stages,runtime_overlord_boss_stage_1);
+
+has_stage = true;
+stage = ds_queue_dequeue(stages);
+instance_create(0,0,stage);
+
+//ds_queue_enqueue(stages,runtime_overlord_01);
+//ds_queue_enqueue(stages,runtime_overlord_boss_stage_2);
+//ds_queue_enqueue(stages,runtime_overlord_02);
+//ds_queue_enqueue(stages,runtime_overlord_boss_stage_3);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(has_stage &amp;&amp; stage.over)
+{
+    instance_destroy(stage);
+    if(!ds_queue_empty(stages))
+    {   
+        stage = ds_queue_dequeue(stages);
+        instance_create(0,0,stage);
+    }
+    else
+    {
+        has_stage = false;
+    }
+}
 </string>
           </argument>
         </arguments>

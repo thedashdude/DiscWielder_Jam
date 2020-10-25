@@ -233,6 +233,7 @@
     <objects name="Overlords">
       <object>objects\runtime_overlord_parent</object>
       <object>objects\runtime_overlord_00</object>
+      <object>objects\runtime_overlord_boss_stage_1</object>
     </objects>
     <objects name="Boss 1">
       <object>objects\boss_1_parent</object>
