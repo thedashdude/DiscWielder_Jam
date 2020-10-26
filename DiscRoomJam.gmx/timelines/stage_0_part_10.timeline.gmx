@@ -101,8 +101,7 @@ make_enemy_02(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///1 E2 + 2 E5
-make_enemy_02(1);
+            <string>///2 E5
 make_enemy_05(1,true);
 make_enemy_05(1,false);
 </string>
