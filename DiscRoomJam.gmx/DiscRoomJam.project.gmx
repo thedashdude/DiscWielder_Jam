@@ -339,6 +339,11 @@
       <timeline>timelines\stage_0_part_09</timeline>
       <timeline>timelines\stage_0_part_10</timeline>
     </timelines>
+    <timelines name="Stage_1">
+      <timeline>timelines\stage_1_part_00</timeline>
+      <timeline>timelines\stage_1_part_01</timeline>
+      <timeline>timelines\stage_1_part_02</timeline>
+    </timelines>
     <timelines name="Boss1">
       <timeline>timelines\boss_1_begin</timeline>
     </timelines>
