@@ -343,6 +343,10 @@
       <timeline>timelines\stage_1_part_00</timeline>
       <timeline>timelines\stage_1_part_01</timeline>
       <timeline>timelines\stage_1_part_02</timeline>
+      <timeline>timelines\stage_1_part_03</timeline>
+      <timeline>timelines\stage_1_part_04</timeline>
+      <timeline>timelines\stage_1_part_05</timeline>
+      <timeline>timelines\stage_1_part_06</timeline>
     </timelines>
     <timelines name="Boss1">
       <timeline>timelines\boss_1_begin</timeline>
