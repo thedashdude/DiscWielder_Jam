@@ -25,28 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>over = false;
-timeline_speed = 1/60;
-timeline_loop = false;
-
-phases = ds_queue_create();
-
-ds_queue_enqueue(phases,stage_0_part_00);
-ds_queue_enqueue(phases,stage_0_part_01);
-ds_queue_enqueue(phases,stage_0_part_02);
-ds_queue_enqueue(phases,stage_0_part_03);
-ds_queue_enqueue(phases,stage_0_part_04);
-ds_queue_enqueue(phases,stage_0_part_05);
-ds_queue_enqueue(phases,stage_0_part_06);
-ds_queue_enqueue(phases,stage_0_part_07);
-ds_queue_enqueue(phases,stage_0_part_08);
-ds_queue_enqueue(phases,stage_0_part_09);
-ds_queue_enqueue(phases,stage_0_part_10);
-
-in_phase = true;
-
-timeline_index = ds_queue_dequeue(phases);
-timeline_running = true;
+            <string>in_phase = false;
+over = false;
+instance_create(-128,-128,boss_2_control);
 </string>
           </argument>
         </arguments>
@@ -69,20 +50,16 @@ timeline_running = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!in_phase &amp;&amp; instance_number(enemy_parent) == 0)
+            <string>if(in_phase)
 {
-    in_phase = true;
-    if(!ds_queue_empty(phases))
-    {
-        timeline_index = ds_queue_dequeue(phases);
-        timeline_running = true;
-        timeline_position = 0;
-    }
-    else
-    {
-        over = true;
-    }
+    instance_create(-128,-128,boss_2_control);
+    in_phase = false;
 }
+else if(instance_number(boss_2_parent) == 0)
+{
+    over = true;
+}
+
 </string>
           </argument>
         </arguments>

@@ -102,7 +102,7 @@ make_enemy_02(2)
             <kind>1</kind>
             <string>/// 1 E0 + 1 E2
 make_enemy_00(1,true);
-make_enemy_02(1);
+
 </string>
           </argument>
         </arguments>
@@ -131,6 +131,7 @@ make_enemy_02(1);
             <string>/// 2 E0 + 2 E1
 make_enemy_00(2,false);
 make_enemy_01(2);
+make_enemy_02(1);
 </string>
           </argument>
         </arguments>

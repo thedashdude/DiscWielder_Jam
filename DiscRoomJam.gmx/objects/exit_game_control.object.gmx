@@ -38,7 +38,7 @@ end_state = 0;
 end_text = "You aren't supposed to get this text.";
 
 
-text_color = make_color_rgb(211,181,170);
+text_color = global.grey;
 </string>
           </argument>
         </arguments>

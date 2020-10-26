@@ -278,7 +278,11 @@
     <objects name="Overlords">
       <object>objects\runtime_overlord_parent</object>
       <object>objects\runtime_overlord_00</object>
+      <object>objects\runtime_overlord_01</object>
+      <object>objects\runtime_overlord_02</object>
       <object>objects\runtime_overlord_boss_stage_1</object>
+      <object>objects\runtime_overlord_boss_stage_2</object>
+      <object>objects\runtime_overlord_boss_stage_3</object>
     </objects>
     <objects name="Boss 1">
       <object>objects\boss_1_parent</object>
@@ -329,6 +333,11 @@
       <timeline>timelines\stage_0_part_03</timeline>
       <timeline>timelines\stage_0_part_04</timeline>
       <timeline>timelines\stage_0_part_05</timeline>
+      <timeline>timelines\stage_0_part_06</timeline>
+      <timeline>timelines\stage_0_part_07</timeline>
+      <timeline>timelines\stage_0_part_08</timeline>
+      <timeline>timelines\stage_0_part_09</timeline>
+      <timeline>timelines\stage_0_part_10</timeline>
     </timelines>
     <timelines name="Boss1">
       <timeline>timelines\boss_1_begin</timeline>
