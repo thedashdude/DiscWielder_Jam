@@ -2,7 +2,7 @@ Level 1 [done-ish]
 Level 2 [done-ish]
 BG Changes [done-ish]
 Music - Insert [done]
-Sounds - Make + Insert
+Sounds - Make + Insert 
 ^	^	^
 Scripted Story
 	Scripting
@@ -15,16 +15,17 @@ Fine tune Disc vs. Final Boss
 
 
 Sounds - 
-Menu Select	x
-Menu Back	x
+Menu Select	x	x
+Menu Back	x	x
+Menu Move	x	x
 
-Saw bzzt	x
-Flash		x
-Disc		x
+Saw bzzt	x	x
+Flash		x	
+Disc		x	
 	
-Splatters	x
-
-Bullet fired	x
+Splatters	x	
+	
+Bullet fired	x	
 
 
 Music:

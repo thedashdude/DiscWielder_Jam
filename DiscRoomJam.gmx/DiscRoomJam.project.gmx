@@ -22,6 +22,9 @@
       <sound>sound\attack_1_sfx</sound>
       <sound>sound\attack_2_sfx</sound>
       <sound>sound\attack_3_sfx</sound>
+      <sound>sound\splatter_1_sfx</sound>
+      <sound>sound\splatter_2_sfx</sound>
+      <sound>sound\splatter_3_sfx</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

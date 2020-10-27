@@ -8,6 +8,7 @@ var force = argument5
 var density = argument6
 var green_ratio = argument7
 
+play_sfx(choose(splatter_1_sfx,splatter_2_sfx,splatter_3_sfx));
 
 for(var i = 0; i < ceil(density * green_ratio); i++)
 {
