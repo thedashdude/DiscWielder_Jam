@@ -98,6 +98,7 @@ else if(next_attack == 2)
 }
 else if(next_attack == 3)
 {
+    image_speed = 0;
     alarm_set(0,120);
     with(boss_1_obj_totem)
     {

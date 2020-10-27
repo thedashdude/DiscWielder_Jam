@@ -1,5 +1,5 @@
 Level 1 [done-ish]
-Level 2
+Level 2 [done-ish]
 BG Changes [done-ish]
 Music - Insert
 Sounds - Make + Insert
@@ -12,3 +12,27 @@ Detailing - Meters + Special Changes
 Back and forth attacks
 Change-focus pausing
 Fine tune Disc vs. Final Boss
+
+
+Sounds - 
+Menu Select	x
+Menu Back	x
+
+Saw bzzt	x
+Flash		x
+Disc		x
+	
+Splatters	x
+
+Bullet fired	x
+
+
+Music:
+Menu	The Misadventure Begins
+Level 1	Cold As Steel
+Boss 1	Highway Slaughter 
+Level 2	City Of Iron
+Boss 2	Indiscriminate
+Level 3	Final Breath
+Boss 3	Human Factory Reset
+[Story]	Superbia

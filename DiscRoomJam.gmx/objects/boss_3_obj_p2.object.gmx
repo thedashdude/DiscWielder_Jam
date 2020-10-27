@@ -72,7 +72,7 @@ attack_rate = 60*4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm_set(3,choose(150,180,240,120));
+            <string>alarm_set(3,choose(150,180,120,120));
 
 var attack = choose(1,2,3,4,5,6);
 

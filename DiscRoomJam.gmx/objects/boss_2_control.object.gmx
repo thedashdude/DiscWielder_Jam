@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hits = 20;
+            <string>hits = 25;
 transition = 10;
 
 //hits = hits * 4;
