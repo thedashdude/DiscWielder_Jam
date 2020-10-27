@@ -4,7 +4,22 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\song_menu</sound>
+      <sound>sound\song_level_1</sound>
+      <sound>sound\song_boss_1</sound>
+      <sound>sound\song_level_2</sound>
+      <sound>sound\song_boss_2</sound>
+      <sound>sound\song_level_3</sound>
+      <sound>sound\song_boss_3</sound>
+      <sound>sound\song_happy_end</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\confirm_blip_sfx</sound>
+      <sound>sound\cancel_blip_sfx</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_spin_blade</sprite>
@@ -216,6 +231,9 @@
     <script>scripts\index_controls.gml</script>
     <script>scripts\key_rebind.gml</script>
     <script>scripts\save_options.gml</script>
+    <script>scripts\play_sfx.gml</script>
+    <script>scripts\start_song.gml</script>
+    <script>scripts\stop_song.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>
@@ -325,6 +343,7 @@
     <object>objects\keybinds_control</object>
     <object>objects\menu_control</object>
     <object>objects\global_control</object>
+    <object>objects\music_stop_obj</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">

@@ -29,9 +29,18 @@
 global.purple = make_color_rgb(62,26,107);
 global.grey = make_color_rgb(81,81,104);
 global.skin = make_color_rgb(211,181,170);
+
+
+
 instance_create(0,0,keybinds_control);
 
+
+
 ini_open("options.ini");
+
+global.sfx_volume = ini_read_real("volume", "sfx", 1);
+global.music_volume = ini_read_real("volume", "music", 1);
+
 if(ini_read_real("settings","fullscreen",0) == 1)
 {
     window_set_fullscreen(true);
@@ -40,6 +49,9 @@ ini_close();
 
 
 room_goto(room_next(room));
+
+
+
 </string>
           </argument>
         </arguments>
