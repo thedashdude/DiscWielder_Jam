@@ -25,19 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>over = false;
+            <string>name  = "On The Path";
+bg = level_background1;
+
+over = false;
 timeline_speed = 1/60;
 timeline_loop = false;
 
 phases = ds_queue_create();
 
-ds_queue_enqueue(phases,stage_1_part_04);
-ds_queue_enqueue(phases,stage_1_part_05);
-ds_queue_enqueue(phases,stage_1_part_06);
+
 ds_queue_enqueue(phases,stage_1_part_00);
 ds_queue_enqueue(phases,stage_1_part_01);
 ds_queue_enqueue(phases,stage_1_part_02);
 ds_queue_enqueue(phases,stage_1_part_03);
+ds_queue_enqueue(phases,stage_1_part_04);
+ds_queue_enqueue(phases,stage_1_part_05);
+ds_queue_enqueue(phases,stage_1_part_06);
+ds_queue_enqueue(phases,stage_1_part_07);
+ds_queue_enqueue(phases,stage_1_part_08);
+ds_queue_enqueue(phases,stage_1_part_09);
+ds_queue_enqueue(phases,stage_1_part_10);
 
 in_phase = true;
 

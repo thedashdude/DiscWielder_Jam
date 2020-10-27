@@ -30,7 +30,7 @@ splat_kill_force = 1.55;
 splat_kill_angle = -1;
 
 active = true;
-speed = 2;
+speed = 1.5;
 
 alarm_set(0,300);
 </string>

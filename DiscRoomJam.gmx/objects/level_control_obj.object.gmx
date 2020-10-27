@@ -161,7 +161,7 @@ instance_create(0,0,stage);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -185,7 +185,10 @@ instance_create(0,0,stage);
 draw_set_color(text_color)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-draw_text(288+48,48,level_name)
+if(instance_exists(stage))
+{
+    draw_text(288+48,48,stage.name);
+}
 
 
 draw_set_halign(fa_left)
@@ -202,6 +205,20 @@ for(var i = 0; i &lt; player_ability_count; i = i + 1)
     draw_sprite(spr_diamond,0,288+1+ 13 + 13*i,200 + 13);
 }
 
+if(instance_exists(player_obj))
+{
+    var yval = 256;
+    var width = 88;
+    var ratio = player_obj.attack_cooldown / player_obj.attack_cooldown_max;
+    draw_set_color(c_black);
+    for(var i = 0 ; i &lt; 5 ; i = i + 1 ){
+        draw_line(288+4,yval+i,288+4+width,yval+i);
+    }
+    draw_set_color(global.purple);
+    for(var i = 0 ; i &lt; 5 ; i = i + 1 ){
+        draw_line(288+4,yval+i,288+4+width*ratio,yval+i);
+    }
+}
 
 
 //draw_set_halign(fa_left)
@@ -209,6 +226,32 @@ for(var i = 0; i &lt; player_ability_count; i = i + 1)
 
 //draw_set_halign(fa_right)
 //draw_text(288+96,96,string(points))
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="72">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(stage))
+{
+    draw_background(stage.bg,0,0);
+}
 </string>
           </argument>
         </arguments>

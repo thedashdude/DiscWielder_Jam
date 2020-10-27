@@ -83,7 +83,7 @@ make_enemy_01(2);
     </event>
   </entry>
   <entry>
-    <step>5</step>
+    <step>7</step>
     <event>
       <action>
         <libid>1</libid>
@@ -111,7 +111,7 @@ make_enemy_03(4);
     </event>
   </entry>
   <entry>
-    <step>6</step>
+    <step>8</step>
     <event>
       <action>
         <libid>1</libid>

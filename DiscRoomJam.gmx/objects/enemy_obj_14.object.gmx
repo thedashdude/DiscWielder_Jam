@@ -101,7 +101,7 @@ alarm_set(0,40);
             <kind>1</kind>
             <string>state = 0;
 
-alarm_set(1,55);
+alarm_set(1,90);
 </string>
           </argument>
         </arguments>

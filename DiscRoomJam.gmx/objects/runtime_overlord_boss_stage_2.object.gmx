@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>in_phase = false;
+            <string>name  = "The Being";
+bg = level_background1;
+
+in_phase = false;
 over = false;
 instance_create(-128,-128,boss_2_control);
 </string>

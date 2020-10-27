@@ -30,7 +30,7 @@ splat_kill_force = 1.5;
 splat_kill_angle = -1;
 
 active = true;
-speed = 1;
+speed = 0.75;
 direction = -360 / (2*pi) * arctan2(player_obj.y+player_obj.sprsize_y/2 - y,player_obj.x+player_obj.sprsize_x/2 - x);
 
 alarm_set(0,90);

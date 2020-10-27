@@ -29,7 +29,7 @@
 splat_kill_force = 1.5
 splat_kill_angle = -1
 
-alarm_set(0,360)
+alarm_set(0,4*60 + 30); // Old is 360
 
 speed = 1
 

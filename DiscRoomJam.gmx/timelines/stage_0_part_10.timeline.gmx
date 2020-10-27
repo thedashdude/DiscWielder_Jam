@@ -19,8 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 3 E4 + 1 E2
-make_enemy_04(3);
+            <string>/// 1 E4 + 1 E2
+make_enemy_04(1);
 make_enemy_02(1);
 </string>
           </argument>

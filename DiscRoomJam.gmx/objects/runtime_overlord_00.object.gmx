@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>over = false;
+            <string>name  = "Summoning#Room";
+bg = level_background2;
+
+over = false;
 timeline_speed = 1/60;
 timeline_loop = false;
 
