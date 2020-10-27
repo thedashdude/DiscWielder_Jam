@@ -1,7 +1,7 @@
 Level 1 [done-ish]
 Level 2 [done-ish]
 BG Changes [done-ish]
-Music - Insert
+Music - Insert [done]
 Sounds - Make + Insert
 ^	^	^
 Scripted Story

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>instance_deactivate_all(true);
+audio_pause_all();
 instance_activate_object(keybinds_control);
 instance_activate_object(global_control);
 text_color = make_color_rgb(211,181,170);
@@ -80,13 +81,12 @@ alarm_set(0,30);
             <string>if(can_continue &amp;&amp; keyboard_check_pressed(keybinds_control.control_menu))
 {
     instance_activate_all();
-    
+    audio_resume_all();
     instance_destroy();
 }
 else if(can_continue &amp;&amp; keyboard_check_released(keybinds_control.control_fire2))
 {
-    instance_activate_all();
-    instance_destroy(all);
+    audio_stop_all();
     room_goto(main_menu);
 }
 

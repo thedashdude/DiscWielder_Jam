@@ -75,8 +75,7 @@ else
 {
     if(keyboard_check_pressed(keybinds_control.control_fire1))
     {
-        instance_activate_all();
-        instance_destroy(all);
+        audio_stop_all();
         room_goto(main_menu);
     }
 }

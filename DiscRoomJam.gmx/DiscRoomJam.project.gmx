@@ -19,6 +19,9 @@
       <sound>sound\confirm_blip_sfx</sound>
       <sound>sound\cancel_blip_sfx</sound>
       <sound>sound\move_blip_sfx</sound>
+      <sound>sound\attack_1_sfx</sound>
+      <sound>sound\attack_2_sfx</sound>
+      <sound>sound\attack_3_sfx</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

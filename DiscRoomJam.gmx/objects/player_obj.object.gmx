@@ -115,6 +115,8 @@ boost_spd = 2
     
     if(fire1 &amp;&amp; attack_on)
     {
+        var s = play_sfx(choose(attack_1_sfx,attack_2_sfx,attack_3_sfx));
+        audio_sound_pitch(s, choose(0.8,0.9,1));
         attack_on = false
         attack_cooldown = 0
         instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj)
