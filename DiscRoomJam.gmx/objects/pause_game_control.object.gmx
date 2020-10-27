@@ -85,6 +85,8 @@ alarm_set(0,30);
 }
 else if(can_continue &amp;&amp; keyboard_check_released(keybinds_control.control_fire2))
 {
+    instance_activate_all();
+    instance_destroy(all);
     room_goto(main_menu);
 }
 

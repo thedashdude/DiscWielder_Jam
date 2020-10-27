@@ -17,4 +17,8 @@ else
     ini_write_real("settings","fullscreen",0);
 }
 
+ini_write_real("volume","sfx",global.sfx_volume);
+ini_write_real("volume","music",global.music_volume);
+
+
 ini_close();

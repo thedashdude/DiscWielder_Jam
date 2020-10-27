@@ -18,6 +18,7 @@
     <sounds name="SFX">
       <sound>sound\confirm_blip_sfx</sound>
       <sound>sound\cancel_blip_sfx</sound>
+      <sound>sound\move_blip_sfx</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -219,6 +220,11 @@
         <script>scripts\menu_options.gml</script>
         <scripts name="Menu Options">
           <script>scripts\menu_options_fullscreen.gml</script>
+          <script>scripts\menu_options_sound.gml</script>
+          <scripts name="Options Sound">
+            <script>scripts\sound_sfx_adjust.gml</script>
+            <script>scripts\sound_music_adjust.gml</script>
+          </scripts>
           <script>scripts\menu_options_controls.gml</script>
           <scripts name="Options Controls">
             <script>scripts\start_keybinding_script.gml</script>
