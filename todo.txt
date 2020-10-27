@@ -1,6 +1,6 @@
-Level 1
+Level 1 [done-ish]
 Level 2
-BG Changes
+BG Changes [done-ish]
 Music - Insert
 Sounds - Make + Insert
 ^	^	^
@@ -9,3 +9,6 @@ Scripted Story
 	Story
 	Face for Maria
 Detailing - Meters + Special Changes
+Back and forth attacks
+Change-focus pausing
+Fine tune Disc vs. Final Boss

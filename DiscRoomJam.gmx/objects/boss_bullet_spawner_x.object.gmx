@@ -3,9 +3,9 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>deadly_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,64 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm_set(0,6);
-purple = make_colour_rgb(62, 26, 107);
+            <string>fire_period = 2;
 
-instance_destroy(bullet_obj_0);
-instance_destroy(bullet_obj_01);
-instance_destroy(bullet_obj_02);
-instance_destroy(bullet_obj_03);
-instance_destroy(bullet_obj_04);
-instance_destroy(bullet_obj_05);
-instance_destroy(bullet_obj_06);
-instance_destroy(bullet_obj_07);
-instance_destroy(bullet_obj_09);
-instance_destroy(bullet_obj_10);
-instance_destroy(bullet_obj_10cross);
-instance_destroy(bullet_obj_11);
-instance_destroy(bullet_obj_12);
-instance_destroy(bullet_obj_13);
-instance_destroy(bullet_obj_14);
-instance_destroy(bullet_obj_beam);
-instance_destroy(bullet_spawner_04);
-instance_destroy(bullet_spawner_05);
-instance_destroy(bullet_spawner_15);
+fire_count = 60;
 
-instance_destroy(boss_bullet_explode);
-instance_destroy(boss_bullet_compress);
-instance_destroy(boss_bullet_scattershot);
-instance_destroy(boss_bullet_spawner_chain_missile);
-instance_destroy(boss_bullet_spawner_scattershot);
+i = 0;
 
-instance_destroy(boss_bullet_fullbeam);
-instance_destroy(boss_bullet_verbar);
-instance_destroy(boss_bullet_horbar);
-instance_destroy(boss_bullet_spawner_random_x);
-instance_destroy(boss_bullet_spawner_x);
-instance_destroy(boss_bullet_spiral);
-instance_destroy(boss_3_obj_sawblade);
+event_perform(ev_alarm,0);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -99,9 +54,19 @@ instance_destroy(boss_3_obj_sawblade);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(purple);
-draw_rectangle(level_control_obj.room_leftmost,level_control_obj.room_upmost,level_control_obj.room_rightmost,level_control_obj.room_downmost,false);
+            <string>i = i + 1;
 
+alarm_set(0,fire_period);
+
+for(var n = 0 ; n &lt; 4 ; n = n + 1){
+    var c = instance_create(x,y,bullet_obj_beam);
+    c.direction = 45 + 90*n;
+}
+
+if(i &gt;= fire_count)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
