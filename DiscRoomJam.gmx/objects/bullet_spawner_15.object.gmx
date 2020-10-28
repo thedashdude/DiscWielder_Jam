@@ -59,6 +59,8 @@ event_perform(ev_alarm,0);
             <kind>1</kind>
             <string>i = i + 1;
 
+basic_bullet_sfx_script(15);
+
 alarm_set(0,fire_period);
 
 for(var n = 0 ; n &lt; 4 ; n = n + 1){

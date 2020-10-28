@@ -39,6 +39,7 @@
     <sprite>sprites\spr_spin_blade</sprite>
     <sprite>sprites\spr_sidebar</sprite>
     <sprite>sprites\spr_whack</sprite>
+    <sprite>sprites\spr_whack_back</sprite>
     <sprite>sprites\mask_whack</sprite>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_0</sprite>
@@ -253,6 +254,7 @@
     <script>scripts\play_sfx.gml</script>
     <script>scripts\start_song.gml</script>
     <script>scripts\stop_song.gml</script>
+    <script>scripts\basic_bullet_sfx_script.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>

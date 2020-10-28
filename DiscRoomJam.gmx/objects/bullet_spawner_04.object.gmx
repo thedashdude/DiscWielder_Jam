@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,bullet_obj_04);
+            <string>basic_bullet_sfx_script(4);
+instance_create(x,y,bullet_obj_04);
 instance_destroy();
 
 </string>

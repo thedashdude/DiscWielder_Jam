@@ -1,4 +1,5 @@
 ///bullet_script_04(count)
+
 var count = argument0
 for(var i =0 ; i < count ; i = i + 1)
 {

@@ -1,4 +1,7 @@
 ///bullet_script_11()
+
+basic_bullet_sfx_script(11);
+
 var count = 8;
 var spread = 360;
 

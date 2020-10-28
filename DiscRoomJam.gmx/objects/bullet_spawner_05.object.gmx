@@ -61,6 +61,7 @@ shot_y = 0;
             <kind>1</kind>
             <string>i = i + 1;
 
+basic_bullet_sfx_script(5);
 alarm_set(0,fire_period);
 
 var c = instance_create(x,y,bullet_obj_05);

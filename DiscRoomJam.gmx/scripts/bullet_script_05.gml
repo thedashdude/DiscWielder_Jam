@@ -1,4 +1,6 @@
-///bullet_script_04(shot_x,shot_y)
+///bullet_script_05(shot_x,shot_y)
+
+
 
 var shot_x = argument0
 var shot_y = argument1

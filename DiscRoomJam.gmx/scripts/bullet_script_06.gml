@@ -1,5 +1,7 @@
 ///bullet_script_06(shot_x,shot_y)
 
+basic_bullet_sfx_script(6);
+
 var shot_x = argument0
 var shot_y = argument1
 
