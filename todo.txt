@@ -2,14 +2,14 @@ Level 1 [done-ish]
 Level 2 [done-ish]
 BG Changes [done-ish]
 Music - Insert [done]
-Sounds - Make + Insert 
+Sounds - Make + Insert [enemies - done; player - done; bosses - not]
 ^	^	^
 Scripted Story
 	Scripting
 	Story
 	Face for Maria
 Detailing - Meters + Special Changes
-Back and forth attacks
+Back and forth attacks [why not]
 Change-focus pausing
 Fine tune Disc vs. Final Boss
 
@@ -20,10 +20,10 @@ Menu Back	x	x
 Menu Move	x	x
 
 Saw bzzt	x	x
-Flash		x	
-Disc		x	
+Flash		x	x
+Disc		x	x
 	
-Splatters	x	
+Splatters	x	x
 	
 Bullet fired	x	
 

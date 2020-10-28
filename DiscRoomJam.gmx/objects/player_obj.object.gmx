@@ -28,6 +28,8 @@
             <string>active = true
 dead = false
 
+back_and_forth = false;
+
 sprsize_x = 18
 sprsize_y = 24
 
@@ -119,7 +121,12 @@ boost_spd = 2
         audio_sound_pitch(s, choose(0.8,0.9,1));
         attack_on = false
         attack_cooldown = 0
-        instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj)
+        var c = instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj);
+        back_and_forth = not back_and_forth;
+        if(back_and_forth)
+        {
+            c.sprite_index = spr_whack_back;
+        }
     }
     
     if(fire2 &amp;&amp; level_control_obj.player_ability_count &gt; 0)

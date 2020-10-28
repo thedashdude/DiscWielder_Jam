@@ -77,8 +77,11 @@ if(other.speed &gt; 0)
 {
     theta = other.direction;
 }
-
-make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green)
+if(player_obj.back_and_forth)
+{
+    theta = (theta + 180) ;
+}
+make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green);
 </string>
           </argument>
         </arguments>

@@ -154,7 +154,15 @@ else if(next_attack == 4)
             <string>var theta = -360 / (2*pi) * arctan2(player_obj.y+player_obj.sprsize_y/2 - y,player_obj.x+player_obj.sprsize_x/2 - x) + 90
 theta = theta mod 360
 theta = theta / 2
-make_splatter(x,y,8,theta, splat_angle, other.force, splat_density, splat_green);
+if(other.speed &gt; 0)
+{
+    theta = other.direction;
+}
+if(player_obj.back_and_forth)
+{
+    theta = theta + 180;
+}
+make_splatter(x,y,16,theta, splat_angle, other.force, splat_density, splat_green);
 
 boss_1_control.hits = boss_1_control.hits - 1;
 
