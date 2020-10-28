@@ -58,6 +58,8 @@ event_perform(ev_alarm,0);
 
 alarm_set(0,fire_period);
 
+basic_bullet_sfx_script(15);
+
 for(var n = 0 ; n &lt; 4 ; n = n + 1){
     var c = instance_create(x,y,bullet_obj_beam);
     c.direction = 45 + 90*n;

@@ -1,5 +1,7 @@
 ///boss_attack_vertical()
 
+basic_bullet_sfx_script(13);
+
 var width = level_control_obj.room_rightmost-level_control_obj.room_leftmost;
 var across = 5;
 var deep = 7;

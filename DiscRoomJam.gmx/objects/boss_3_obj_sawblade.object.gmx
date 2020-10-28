@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>splat_kill_spread = 30;
+            <string>var s = play_sfx(choose(attack_1_sfx,attack_2_sfx,attack_3_sfx));
+audio_sound_pitch(s, choose(0.8,0.9,1));
+
+splat_kill_spread = 30;
 splat_kill_force = 1.6;
 splat_kill_angle = -1;
 
@@ -39,6 +42,8 @@ launch_speed = 5;
 state = -1;
 
 alarm_set(0,60);
+
+hit_player = false;
 </string>
           </argument>
         </arguments>
@@ -117,7 +122,36 @@ else if(state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = 1;
+            <string>play_sfx(parry_sfx);
+state = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="player_obj">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!hit_player)
+{
+    var s = play_sfx(choose(attack_1_sfx,attack_2_sfx,attack_3_sfx));
+    audio_sound_pitch(s, choose(0.8,0.9,1));
+    hir_player = true;
+}
 </string>
           </argument>
         </arguments>

@@ -27,6 +27,7 @@
       <sound>sound\splatter_3_sfx</sound>
       <sound>sound\flash_sfx</sound>
       <sound>sound\disc_sfx</sound>
+      <sound>sound\parry_sfx</sound>
       <sounds name="Bullet SFX">
         <sound>sound\bullet_general_1</sound>
         <sound>sound\bullet_general_2</sound>

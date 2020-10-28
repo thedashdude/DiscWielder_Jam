@@ -55,6 +55,9 @@ event_perform(ev_alarm,0);
             <string>i = i + 1;
 var offset = 12;
 var d = irandom(360);
+
+basic_bullet_sfx_script(1);
+
 var c = instance_create(x + offset * dcos(d),y + offset * dsin(d),boss_bullet_scattershot);
 c.acc = random_range(0.002,0.006);
 c.direction = -d;
