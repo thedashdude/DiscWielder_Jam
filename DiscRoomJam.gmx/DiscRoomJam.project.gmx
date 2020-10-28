@@ -25,6 +25,13 @@
       <sound>sound\splatter_1_sfx</sound>
       <sound>sound\splatter_2_sfx</sound>
       <sound>sound\splatter_3_sfx</sound>
+      <sound>sound\flash_sfx</sound>
+      <sound>sound\disc_sfx</sound>
+      <sounds name="Bullet SFX">
+        <sound>sound\bullet_general_1</sound>
+        <sound>sound\bullet_general_2</sound>
+        <sound>sound\bullet_general_3</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
