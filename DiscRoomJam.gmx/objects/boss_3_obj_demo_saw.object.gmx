@@ -124,7 +124,7 @@ state = 1;
 {
     var s = play_sfx(choose(attack_1_sfx,attack_2_sfx,attack_3_sfx));
     audio_sound_pitch(s, choose(0.8,0.9,1));
-    hir_player = true;
+    hit_player = true;
 }
 </string>
           </argument>
