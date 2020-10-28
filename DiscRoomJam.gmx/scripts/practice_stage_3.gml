@@ -2,7 +2,7 @@ var c = instance_create(0,0,level_control_obj);
 if(practice_ability == 1)
 {
     c.player_ability = ability_flash;
-    c.player_ability_count = 3;
+    c.player_ability_count = 6;
 }
 else
 {

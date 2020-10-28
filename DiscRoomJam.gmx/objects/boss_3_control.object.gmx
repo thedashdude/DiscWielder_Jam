@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hits = 15;
-transition = 10;
+            <string>hits = 50;
+transition = 35;
 
 //hits = hits * 4;
 //transition = transition * 4;
@@ -56,7 +56,7 @@ instance_create(level_control_obj.room_center_x,level_control_obj.room_upmost - 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hits &lt;= 5)
+            <string>if(hits &lt;= 15)
 {
     boss_3_obj_p2.attack_rate = 150;
 }

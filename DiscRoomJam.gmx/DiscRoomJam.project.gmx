@@ -131,6 +131,7 @@
     </sprites>
     <sprites name="Boss 3 Sprites">
       <sprite>sprites\spr_boss_3</sprite>
+      <sprite>sprites\spr_boss_3_shield</sprite>
       <sprite>sprites\spr_spin_blade_evil</sprite>
     </sprites>
     <sprite>sprites\spr_gradient</sprite>

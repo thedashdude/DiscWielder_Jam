@@ -64,6 +64,7 @@ instance_create(level_control_obj.room_center_x,level_control_obj.room_upmost - 
     {
         instance_destroy();
     }
+    level_control_obj.player_ability_count = level_control_obj.player_ability_count + 1;
 }
 if(hits&lt;=transition &amp;&amp; can_trans)
 {

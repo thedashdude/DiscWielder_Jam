@@ -211,7 +211,9 @@ for(var i = 0; i &lt; player_lives; i = i + 1)
 draw_text(288+1,200,"Cards:")
 for(var i = 0; i &lt; player_ability_count; i = i + 1)
 {
-    draw_sprite(spr_diamond,0,288+1+ 13 + 13*i,200 + 13);
+    var yoff = 0;
+    if(i &gt; 5){yoff = 1;}
+    draw_sprite(spr_diamond,0,288+1+ 13 + 13*i - yoff*13*6,200 + 13 + 13 * yoff);
 }
 
 if(instance_exists(player_obj))

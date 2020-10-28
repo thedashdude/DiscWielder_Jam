@@ -47,7 +47,7 @@ goal_x = 0;
 goal_y = 0;
 goal_spd = 1;
 
-attack_rate = 60*4;
+attack_rate = 60*4 - 20;
 
 
 </string>
@@ -72,7 +72,7 @@ attack_rate = 60*4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm_set(3,choose(150,180,120,120));
+            <string>alarm_set(3,choose(150,180,120,90));
 
 var attack = choose(1,2,3,4,5,6);
 
@@ -238,7 +238,7 @@ else if(state == 0)
     var theta = other.direction;
     make_splatter(x,y,8,theta, splat_angle, 1.5, splat_density, splat_green);
     
-    boss_3_control.hits = boss_3_control.hits - 1;
+    boss_3_control.hits = boss_3_control.hits - 3;
     
     instance_destroy(boss_3_obj_sawblade);
 }
@@ -264,7 +264,22 @@ else if(state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Do Nothing
+            <string>var theta = -360 / (2*pi) * arctan2(player_obj.y+player_obj.sprsize_y/2 - y,player_obj.x+player_obj.sprsize_x/2 - x) + 90
+theta = theta mod 360
+theta = theta / 2
+if(other.speed &gt; 0)
+{
+    theta = other.direction;
+}
+if(player_obj.back_and_forth)
+{
+    theta = theta + 180;
+}
+make_splatter(x,y,16,theta, splat_angle, other.force, splat_density, splat_green);
+
+boss_3_control.hits = boss_3_control.hits - 1;
+
+instance_destroy(other);
 </string>
           </argument>
         </arguments>

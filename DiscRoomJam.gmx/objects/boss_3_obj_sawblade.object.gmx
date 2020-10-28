@@ -122,8 +122,10 @@ else if(state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>play_sfx(parry_sfx);
-state = 1;
+            <string>if(state == 0){
+    play_sfx(parry_sfx);
+    state = 1;
+}
 </string>
           </argument>
         </arguments>
