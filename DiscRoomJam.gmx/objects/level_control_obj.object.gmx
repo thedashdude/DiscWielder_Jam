@@ -130,6 +130,10 @@ if(keyboard_check_pressed( keybinds_control.control_menu))
 {
     instance_create(0,0,pause_game_control);
 }
+if(instance_exists(stage))
+{
+    bg = stage.bg;
+}
 </string>
           </argument>
         </arguments>
@@ -156,6 +160,11 @@ if(keyboard_check_pressed( keybinds_control.control_menu))
 has_stage = true;
 stage = ds_queue_dequeue(stages);
 instance_create(0,0,stage);
+
+if(instance_exists(stage))
+{
+    bg = stage.bg;
+}
 </string>
           </argument>
         </arguments>
@@ -248,10 +257,7 @@ if(instance_exists(player_obj))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(stage))
-{
-    draw_background(stage.bg,0,0);
-}
+            <string>draw_background(bg,0,0);
 </string>
           </argument>
         </arguments>

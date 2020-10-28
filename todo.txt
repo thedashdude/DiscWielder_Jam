@@ -25,7 +25,7 @@ Disc		x	x
 	
 Splatters	x	x
 	
-Bullet fired	x	
+Bullet fired	x	x
 
 
 Music:
