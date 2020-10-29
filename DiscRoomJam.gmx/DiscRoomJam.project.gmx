@@ -138,6 +138,11 @@
     <sprites name="Icons">
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_diamond</sprite>
+      <sprite>sprites\spr_maria_text</sprite>
+      <sprite>sprites\spr_carpathia_text</sprite>
+      <sprite>sprites\spr_blank_text</sprite>
+      <sprite>sprites\spr_unknown_text</sprite>
+      <sprite>sprites\spr_maria_evil_text</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -147,7 +152,6 @@
     <background>background\level_background3</background>
     <background>background\level_background4</background>
     <background>background\level_background5</background>
-    <background>background\background6</background>
     <background>background\testing_bg</background>
     <background>background\menu_background</background>
   </backgrounds>
@@ -318,6 +322,8 @@
     <object>objects\gore_splatter_obj</object>
     <objects name="Overlords">
       <object>objects\runtime_overlord_parent</object>
+      <object>objects\runtime_cutscene_parent</object>
+      <object>objects\runtime_overlord_cutscene_00</object>
       <object>objects\runtime_overlord_00</object>
       <object>objects\runtime_overlord_01</object>
       <object>objects\runtime_overlord_02</object>
@@ -367,6 +373,7 @@
     <object>objects\menu_control</object>
     <object>objects\global_control</object>
     <object>objects\music_stop_obj</object>
+    <object>objects\cutscene_fade_out_obj</object>
   </objects>
   <timelines name="timelines">
     <timelines name="Stage_0">

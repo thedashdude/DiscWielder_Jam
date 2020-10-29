@@ -43,14 +43,20 @@ attack_offset_y = -24
 move_spd = 1
 
 
-attack_on = true
-attack_cooldown_max = 60
-attack_cooldown = 0
+attack_on = false;
+attack_cooldown_max = 60;
+attack_cooldown = 0;
 
 ability_index = 0
 ability_count = 0
 
 boost_spd = 2
+
+input_x = 0;
+input_y = 0;
+fire1 = false;
+fire2 = false;
+fire3 = false;
 </string>
           </argument>
         </arguments>

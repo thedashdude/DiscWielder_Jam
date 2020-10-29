@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>global.font = font_add_sprite(font_spr,32,false,0);
 global.purple = make_color_rgb(62,26,107);
+global.teal = make_color_rgb(26,139,113);
+global.red = make_color_rgb(227,15,28);
 global.grey = make_color_rgb(81,81,104);
 global.skin = make_color_rgb(211,181,170);
 
