@@ -97,6 +97,7 @@ if(has_stage &amp;&amp; stage.over)
     if(!ds_queue_empty(stages))
     {   
         stage = ds_queue_dequeue(stages);
+        player_obj.active = true;
         instance_create(0,0,stage);
     }
     else

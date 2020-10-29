@@ -33,6 +33,8 @@ bg = level_background1;
 in_phase = false;
 over = false;
 instance_create(-128,-128,boss_2_control);
+
+do_alarm = true;
 </string>
           </argument>
         </arguments>
@@ -61,6 +63,29 @@ instance_create(-128,-128,boss_2_control);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>over = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -83,9 +108,11 @@ instance_create(-128,-128,boss_2_control);
     instance_create(-128,-128,boss_2_control);
     in_phase = false;
 }
-else if(instance_number(boss_2_parent) == 0)
+else if(instance_number(boss_2_parent) == 0 &amp;&amp; do_alarm)
 {
-    over = true;
+    do_alarm = false;
+    player_obj.active = false;
+    alarm_set(0,180);
 }
 
 </string>

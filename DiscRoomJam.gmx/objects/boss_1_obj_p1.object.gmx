@@ -123,7 +123,7 @@ else if(next_attack == 4)
             <kind>1</kind>
             <string>if(state == -1)
 {
-    y = y + 2;
+    y = y + 0.75;
     if(y - sprite_up &gt; level_control_obj.room_upmost + 54)
     {
         event_perform(ev_alarm,0);
@@ -164,8 +164,9 @@ if(player_obj.back_and_forth)
 }
 make_splatter(x,y,16,theta, splat_angle, other.force, splat_density, splat_green);
 
-boss_1_control.hits = boss_1_control.hits - 1;
-
+if(state!=-1){
+    boss_1_control.hits = boss_1_control.hits - 1;
+}
 
 instance_destroy(other);
 </string>
