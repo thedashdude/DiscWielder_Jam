@@ -68,6 +68,7 @@ event_perform(ev_step,ev_step_begin);
 player_obj.dead = false;
 player_obj.active = true;
 instance_destroy(cutscene_fade_out_obj);
+wipe_gameplay();
 </string>
           </argument>
         </arguments>
