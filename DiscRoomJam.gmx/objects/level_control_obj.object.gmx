@@ -120,7 +120,7 @@ if(has_stage &amp;&amp; stage.over)
         }
     }
 }
-else if(player_lives &lt; 0)
+else if(player_lives &lt; 0 &amp;&amp; !global.easy_mode_life)
 {
     var c = instance_create(0,0,exit_game_control);
     c.end_text = "You Died.";
@@ -204,7 +204,7 @@ if(instance_exists(stage))
 draw_set_halign(fa_left)
 draw_text(288+1,170,"Lives:")
 
-for(var i = 0; i &lt; player_lives; i = i + 1)
+for(var i = 0; i &lt; player_lives+1; i = i + 1)
 {
     draw_sprite(spr_heart,0,288+1+ 13 + 13*i,170 + 13);
 }

@@ -190,35 +190,7 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_set_color(text_color);
-
-if(menu_name != "Controls"){
-    if(menu_name == "Sound"){
-        draw_set_valign(fa_bottom);
-        draw_set_halign(fa_left);
-        draw_text(2,288-3,"[SFX: " + string_format(global.sfx_volume,1,1) + " | MUSIC: " + string_format(global.music_volume,1,1) + "]");
-    }
-    else if(menu_name != ""){
-        draw_set_valign(fa_bottom);
-        draw_set_halign(fa_left);
-        draw_text(2,288-3,"[" + menu_name + "]");
-    }
-    
-    draw_set_valign(fa_middle);
-    draw_set_halign(fa_center);
-    
-    for(var i = 0; i &lt; ds_list_size(menu_texts); i = i + 1)
-    {
-        if(select_index == i)
-        {
-            draw_text(56,78 + 20*i,"&gt;" + menu_texts[|i] + "&lt;");
-        }
-        else
-        {
-            draw_text(56,78 + 20*i,menu_texts[|i]);
-        }
-    }
-}
-else
+if(menu_name == "Controls")
 {
 
     draw_set_valign(fa_bottom);
@@ -248,6 +220,66 @@ else
         }
     }
 }
+else if(menu_name == "Difficulty")
+{
+    draw_set_valign(fa_bottom);
+    draw_set_halign(fa_left);
+    draw_text(2,288-3,"[" + menu_name + "]");
+    
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_left);
+    
+    for(var i = 0; i &lt; ds_list_size(menu_texts); i = i + 1)
+    {
+        var val = "UNDEF";
+        if(i == 0)
+        {
+            val = bool_to_string(global.easy_mode_life);
+        }
+        else
+        {
+            val = bool_to_string(global.easy_mode_ability);
+        }
+        
+        if(select_index == i)
+        {
+            draw_text(2,78 + 20*i,"&gt;" + menu_texts[|i] + " - " + val);
+        }
+        else
+        {
+            draw_text(10,78 + 20*i,menu_texts[|i] + " - " + val);
+        }
+    }
+}
+else
+{
+    if(menu_name == "Sound"){
+        draw_set_valign(fa_bottom);
+        draw_set_halign(fa_left);
+        draw_text(2,288-3,"[SFX: " + string_format(global.sfx_volume,1,1) + " | MUSIC: " + string_format(global.music_volume,1,1) + "]");
+    }
+    else if(menu_name != ""){
+        draw_set_valign(fa_bottom);
+        draw_set_halign(fa_left);
+        draw_text(2,288-3,"[" + menu_name + "]");
+    }
+    
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_center);
+    
+    for(var i = 0; i &lt; ds_list_size(menu_texts); i = i + 1)
+    {
+        if(select_index == i)
+        {
+            draw_text(56,78 + 20*i,"&gt;" + menu_texts[|i] + "&lt;");
+        }
+        else
+        {
+            draw_text(56,78 + 20*i,menu_texts[|i]);
+        }
+    }
+}
+
 
 </string>
           </argument>

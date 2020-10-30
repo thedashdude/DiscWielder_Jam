@@ -242,6 +242,11 @@
             <script>scripts\sound_sfx_adjust.gml</script>
             <script>scripts\sound_music_adjust.gml</script>
           </scripts>
+          <script>scripts\menu_options_difficulty.gml</script>
+          <scripts name="Options Difficulty">
+            <script>scripts\difficulty_life_adjust.gml</script>
+            <script>scripts\difficulty_ability_adjust.gml</script>
+          </scripts>
           <script>scripts\menu_options_controls.gml</script>
           <scripts name="Options Controls">
             <script>scripts\start_keybinding_script.gml</script>
@@ -258,6 +263,8 @@
     <script>scripts\start_song.gml</script>
     <script>scripts\stop_song.gml</script>
     <script>scripts\basic_bullet_sfx_script.gml</script>
+    <script>scripts\bool_to_string.gml</script>
+    <script>scripts\boss_kill_boost.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>

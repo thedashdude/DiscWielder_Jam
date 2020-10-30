@@ -125,8 +125,8 @@ fire3 = false;
     {
         var s = play_sfx(choose(attack_1_sfx,attack_2_sfx,attack_3_sfx));
         audio_sound_pitch(s, choose(0.8,0.9,1));
-        attack_on = false
-        attack_cooldown = 0
+        attack_on = false;
+        attack_cooldown = 0;
         var c = instance_create(x + attack_offset_x, y + attack_offset_y, player_attack_obj);
         back_and_forth = not back_and_forth;
         if(back_and_forth)
@@ -138,6 +138,13 @@ fire3 = false;
     if(fire2 &amp;&amp; level_control_obj.player_ability_count &gt; 0)
     {
         level_control_obj.player_ability_count = level_control_obj.player_ability_count - 1;
+        script_execute(level_control_obj.player_ability);
+    }
+    else if(fire2 &amp;&amp; global.easy_mode_ability &amp;&amp; attack_on)
+    {
+        attack_on = false;
+        attack_cooldown = 0;
+        //level_control_obj.player_ability_count = level_control_obj.player_ability_count - 1;
         script_execute(level_control_obj.player_ability);
     }
 

@@ -1,11 +1,10 @@
 ^	^	^
-Scripted Story
-	Scripting
-	Story
-	Face for Maria
-Detailing - Meters + Special Changes
-Change-focus pausing
-Fine tune Disc vs. Final Boss
+Change-focus pausing				
+Lives Rebalancing				x
+Easy Mode - No Deaths				x
+	  - Unlimitted Abiliteis (on timer)	x
+Faster Death / Skippable			x
+Restart?					
 
 
 Sounds - 

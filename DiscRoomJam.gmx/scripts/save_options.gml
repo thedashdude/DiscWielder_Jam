@@ -17,6 +17,24 @@ else
     ini_write_real("settings","fullscreen",0);
 }
 
+if(global.easy_mode_life)
+{
+    ini_write_real("easy","life",1);
+}
+else
+{
+    ini_write_real("easy","life",0);
+}
+
+if(global.easy_mode_ability)
+{
+    ini_write_real("easy","ability",1);
+}
+else
+{
+    ini_write_real("easy","ability",0);
+}
+
 ini_write_real("volume","sfx",global.sfx_volume);
 ini_write_real("volume","music",global.music_volume);
 

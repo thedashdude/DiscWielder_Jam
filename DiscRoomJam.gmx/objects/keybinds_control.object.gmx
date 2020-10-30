@@ -34,7 +34,7 @@ control_right = ini_read_real("keys", "right", vk_right);
 control_fire1 = ini_read_real("keys", "fire1", ord('Z'));
 control_fire2 = ini_read_real("keys", "fire2", ord('X'));
 control_fire3 = ini_read_real("keys", "fire3", ord('C'));
-control_menu = ini_read_real("keys", "menu", vk_tab);
+control_menu = ini_read_real("keys", "menu", vk_escape);
 
 ini_close();
 </string>
