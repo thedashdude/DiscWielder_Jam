@@ -101,6 +101,8 @@ msg_spr = -1;
 
 player_obj.active = false;
 
+skipthis = false;
+
 event_perform(ev_step,ev_step_begin);
 </string>
           </argument>

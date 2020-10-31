@@ -50,6 +50,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = image_number-1;
+
+runtime_cutscene_parent.skipthis = true;
 </string>
           </argument>
         </arguments>
