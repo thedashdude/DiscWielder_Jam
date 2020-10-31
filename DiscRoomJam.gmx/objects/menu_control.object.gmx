@@ -42,7 +42,7 @@ last_menu = ds_stack_create();
 
 menu_name = "void";
 
-menu_main();
+script_execute(global.start_menu);
 
 snazzy_released = false;
 </string>
