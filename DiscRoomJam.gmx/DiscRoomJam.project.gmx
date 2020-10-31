@@ -259,6 +259,7 @@
           </scripts>
         </scripts>
         <script>scripts\menu_exit.gml</script>
+        <script>scripts\menu_records.gml</script>
       </scripts>
     </scripts>
     <script>scripts\keyval_to_string.gml</script>
@@ -271,6 +272,7 @@
     <script>scripts\basic_bullet_sfx_script.gml</script>
     <script>scripts\bool_to_string.gml</script>
     <script>scripts\boss_kill_boost.gml</script>
+    <script>scripts\void_script.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\DB_Font</font>

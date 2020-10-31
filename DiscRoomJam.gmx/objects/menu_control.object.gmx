@@ -251,6 +251,20 @@ else if(menu_name == "Difficulty")
         }
     }
 }
+else if(menu_name == "Records")
+{
+    draw_set_valign(fa_bottom);
+    draw_set_halign(fa_left);
+    draw_text(2,288-3,"[" + menu_name + "]");
+    
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_left);
+
+    for(var i = 0; i &lt; ds_list_size(menu_texts); i = i + 1)
+    {
+            draw_text(2,78 + 20*i,menu_texts[|i]);
+    }
+}
 else
 {
     if(menu_name == "Sound"){

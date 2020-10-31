@@ -89,12 +89,20 @@ else
         {
             ini_open("options.ini");
             ini_write_real("times","full",min(best_time_full_game,level_timer));
+            if(best_time_full_game == -1)
+            {
+                ini_write_real("times","full",level_timer);
+            }
             ini_close();
         }
         else if(end_state == 5)
         {
             ini_open("options.ini");
             ini_write_real("times","boss",min(best_time_boss_rush,level_timer));
+            if(best_time_boss_rush == -1)
+            {
+                ini_write_real("times","boss",level_timer);
+            }
             ini_close();
         }
     }
