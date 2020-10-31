@@ -80,6 +80,7 @@ if(level_control_obj.player_lives &lt; 0 &amp;&amp; !global.easy_mode_life)
           <argument>
             <kind>1</kind>
             <string>wipe_gameplay();
+wipe_gameplay();
 player_obj.x = level_control_obj.room_center_x-9;
 player_obj.y = level_control_obj.room_center_y;
 player_obj.dead = false;
