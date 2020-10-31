@@ -234,6 +234,12 @@
             <script>scripts\practice_boss_3.gml</script>
           </scripts>
         </scripts>
+        <script>scripts\menu_boss_rush_select.gml</script>
+        <scripts name="Menu Boss Rush Select">
+          <script>scripts\menu_boss_disc.gml</script>
+          <script>scripts\menu_boss_flash.gml</script>
+          <script>scripts\menu_boss_begin.gml</script>
+        </scripts>
         <script>scripts\menu_options.gml</script>
         <scripts name="Menu Options">
           <script>scripts\menu_options_fullscreen.gml</script>

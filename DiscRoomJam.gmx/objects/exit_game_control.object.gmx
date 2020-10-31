@@ -88,13 +88,13 @@ else
         if(end_state == 3 || end_state == 4)
         {
             ini_open("options.ini");
-            ini_write_real("times","full",max(best_time_full_game,level_timer));
+            ini_write_real("times","full",min(best_time_full_game,level_timer));
             ini_close();
         }
         else if(end_state == 5)
         {
             ini_open("options.ini");
-            ini_write_real("times","boss",max(best_time_boss_rush,level_timer));
+            ini_write_real("times","boss",min(best_time_boss_rush,level_timer));
             ini_close();
         }
     }
@@ -139,19 +139,19 @@ else
     
     if(end_state == 3 || end_state == 4)
     {
-        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + ":" + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)));
+        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + "M " + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)) + "S");
         if(best_time_full_game != -1)
         {
-            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_full_game div 3600) + ":" + string((best_time_full_game div 60) mod 60) + "." + string(floor(100 * (best_time_full_game mod 60) / 60)));
+            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_full_game div 3600) + "M " + string((best_time_full_game div 60) mod 60) + "." + string(floor(100 * (best_time_full_game mod 60) / 60)) + "S");
         }
     }
     
     if(end_state == 5)
     {
-        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + ":" + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)));
+        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + "M " + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)) + "S");
         if(best_time_boss_rush != -1)
         {
-            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_boss_rush div 3600) + ":" + string((best_time_boss_rush div 60) mod 60) + "." + string(floor(100 * (best_time_boss_rush mod 60) / 60)));
+            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_boss_rush div 3600) + "M " + string((best_time_boss_rush div 60) mod 60) + "." + string(floor(100 * (best_time_boss_rush mod 60) / 60)) + "S");
         }
     }
     

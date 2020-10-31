@@ -61,6 +61,8 @@ stages = ds_queue_create();
 has_stage = true;
 
 is_practice = false;
+is_boss_rush = false;
+
 game_text = "Victory!";
 
 //ds_queue_enqueue(stages,runtime_overlord_01);
@@ -111,6 +113,12 @@ if(has_stage &amp;&amp; stage.over)
         {
             c.end_text = "Practice Complete"
             c.end_state = 2;
+        }
+        else if(is_boss_rush)
+        {
+            c.end_text = "BOSSES RUSHED"
+            c.end_state = 5;
+            c.level_timer = level_timer;
         }
         else if(player_lives &lt; 3)
         {
