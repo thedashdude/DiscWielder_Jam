@@ -55,7 +55,7 @@ make_enemy_02(2)
     </event>
   </entry>
   <entry>
-    <step>4</step>
+    <step>5</step>
     <event>
       <action>
         <libid>1</libid>

@@ -44,7 +44,7 @@ ini_open("options.ini");
 global.sfx_volume = ini_read_real("volume", "sfx", 1);
 global.music_volume = ini_read_real("volume", "music", 1);
 global.easy_mode_life = ini_read_real("easy", "life", 0) == 1;
-global.easy_mode_ability = ini_read_real("easy", "ability", 0) == 1;
+global.easy_mode_ability = ini_read_real("easy", "ability", 1) == 1;
 
 if(ini_read_real("settings","fullscreen",0) == 1)
 {
