@@ -19,8 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 4 E18
-make_enemy_18(4);
+            <string>/// 3 E21
+make_enemy_21(3);
 </string>
           </argument>
         </arguments>
@@ -46,8 +46,8 @@ make_enemy_18(4);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 2 E19
-make_enemy_19(2);
+            <string>/// 2 E18
+make_enemy_18(2);
 </string>
           </argument>
         </arguments>
@@ -73,8 +73,8 @@ make_enemy_19(2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 2 E20
-make_enemy_20(2);
+            <string>/// 2 E15
+make_enemy_15(2);
 </string>
           </argument>
         </arguments>
@@ -100,8 +100,8 @@ make_enemy_20(2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 1 E8
-make_enemy_08(1);
+            <string>/// 1 E17
+make_enemy_17(1);
 </string>
           </argument>
         </arguments>

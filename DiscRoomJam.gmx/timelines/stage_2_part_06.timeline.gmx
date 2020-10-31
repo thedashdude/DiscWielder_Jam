@@ -19,8 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 3 E20
-make_enemy_20(3);
+            <string>/// 2 E16
+make_enemy_16(2);
 </string>
           </argument>
         </arguments>
@@ -28,7 +28,7 @@ make_enemy_20(3);
     </event>
   </entry>
   <entry>
-    <step>2</step>
+    <step>3</step>
     <event>
       <action>
         <libid>1</libid>
@@ -46,35 +46,9 @@ make_enemy_20(3);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 2 E17
-make_enemy_17(2);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>8</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// 2 E10
-make_enemy_10(2);
+            <string>/// 2 E16 + 2 E21
+make_enemy_16(2);
+make_enemy_21(2);
 </string>
           </argument>
         </arguments>
@@ -100,8 +74,8 @@ make_enemy_10(2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 1 E13
-make_enemy_13(1);
+            <string>/// 2 E19
+make_enemy_19(2);
 </string>
           </argument>
         </arguments>
@@ -109,7 +83,63 @@ make_enemy_13(1);
     </event>
   </entry>
   <entry>
-    <step>10</step>
+    <step>11</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// 2 E20 + 2 E15
+make_enemy_20(2);
+make_enemy_15(2);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>13</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// 2 E16 + 2 E17
+make_enemy_16(2);
+make_enemy_17(2);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>14</step>
     <event>
       <action>
         <libid>1</libid>

@@ -28,7 +28,7 @@ make_enemy_16(4);
     </event>
   </entry>
   <entry>
-    <step>4</step>
+    <step>3</step>
     <event>
       <action>
         <libid>1</libid>
@@ -46,8 +46,8 @@ make_enemy_16(4);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 2 E16
-make_enemy_16(2);
+            <string>/// 2 E17
+make_enemy_17(2);
 </string>
           </argument>
         </arguments>
@@ -55,7 +55,7 @@ make_enemy_16(2);
     </event>
   </entry>
   <entry>
-    <step>5</step>
+    <step>4</step>
     <event>
       <action>
         <libid>1</libid>

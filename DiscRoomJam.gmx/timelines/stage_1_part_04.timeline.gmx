@@ -19,8 +19,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 2 E10
-make_enemy_10(2);
+            <string>/// 4 E13
+make_enemy_13(4);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>2</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// 2 E0
+make_enemy_00(2,true);
 </string>
           </argument>
         </arguments>
@@ -55,7 +82,7 @@ make_enemy_12(1);
     </event>
   </entry>
   <entry>
-    <step>14</step>
+    <step>9</step>
     <event>
       <action>
         <libid>1</libid>
@@ -73,9 +100,8 @@ make_enemy_12(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// 3 E10 + 2 E12
-make_enemy_10(3);
-make_enemy_12(1);
+            <string>/// 2 E7
+make_enemy_07(2);
 </string>
           </argument>
         </arguments>
@@ -83,7 +109,7 @@ make_enemy_12(1);
     </event>
   </entry>
   <entry>
-    <step>15</step>
+    <step>10</step>
     <event>
       <action>
         <libid>1</libid>
