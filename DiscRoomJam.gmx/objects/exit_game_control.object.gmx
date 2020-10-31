@@ -35,8 +35,15 @@ end_state = 0;
 // 2 - Practice Over
 // 3 - Game Win
 // 4 - Perfect Win
+// 5 - Boss Rush Win
 end_text = "You aren't supposed to get this text.";
 
+level_timer = 0;
+
+ini_open("options.ini");
+best_time_full_game = ini_read_real("times","full",-1);
+best_time_boss_rush = ini_read_real("times","boss",-1);
+ini_close();
 
 text_color = global.grey;
 </string>
@@ -68,6 +75,7 @@ text_color = global.grey;
     {
         instance_deactivate_all(true);
         instance_activate_object(keybinds_control);
+        instance_activate_object(global_control);
         finalized = true;
     }
 }
@@ -77,6 +85,18 @@ else
     {
         audio_stop_all();
         room_goto(main_menu);
+        if(end_state == 3 || end_state == 4)
+        {
+            ini_open("options.ini");
+            ini_write_real("times","full",max(best_time_full_game,level_timer));
+            ini_close();
+        }
+        else if(end_state == 5)
+        {
+            ini_open("options.ini");
+            ini_write_real("times","boss",max(best_time_boss_rush,level_timer));
+            ini_close();
+        }
     }
 }
 
@@ -116,6 +136,24 @@ else
     draw_set_valign(fa_middle);
     draw_set_halign(fa_center);
     draw_text(room_width/2,room_height/2,end_text);
+    
+    if(end_state == 3 || end_state == 4)
+    {
+        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + ":" + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)));
+        if(best_time_full_game != -1)
+        {
+            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_full_game div 3600) + ":" + string((best_time_full_game div 60) mod 60) + "." + string(floor(100 * (best_time_full_game mod 60) / 60)));
+        }
+    }
+    
+    if(end_state == 5)
+    {
+        draw_text(room_width/2,room_height/2-68,"Time: " + string(level_timer div 3600) + ":" + string((level_timer div 60) mod 60) + "." + string(floor(100 * (level_timer mod 60) / 60)));
+        if(best_time_boss_rush != -1)
+        {
+            draw_text(room_width/2,room_height/2-56,"Best time: " + string(best_time_boss_rush div 3600) + ":" + string((best_time_boss_rush div 60) mod 60) + "." + string(floor(100 * (best_time_boss_rush mod 60) / 60)));
+        }
+    }
     
     if(end_state == 4)    
     {

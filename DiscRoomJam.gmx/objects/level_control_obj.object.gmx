@@ -67,6 +67,8 @@ game_text = "Victory!";
 //ds_queue_enqueue(stages,runtime_overlord_boss_stage_2);
 //ds_queue_enqueue(stages,runtime_overlord_02);
 //ds_queue_enqueue(stages,runtime_overlord_boss_stage_3);
+
+level_timer = 0;
 </string>
           </argument>
         </arguments>
@@ -89,7 +91,7 @@ game_text = "Victory!";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>level_timer = level_timer + 1;
 
 if(has_stage &amp;&amp; stage.over)
 {
@@ -113,10 +115,12 @@ if(has_stage &amp;&amp; stage.over)
         else if(player_lives &lt; 3)
         {
             c.end_state = 3;
+            c.level_timer = level_timer;
         }
         else
         {
             c.end_state = 4;
+            c.level_timer = level_timer;
         }
     }
 }
